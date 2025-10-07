@@ -30,6 +30,7 @@ public class JavaPatika {
 ```
 ## Veri Tiplerine Göre Scanner Metotları
 <img width="510" height="301" alt="image" src="https://github.com/user-attachments/assets/6e437b87-a537-4bd1-bc71-fce261c3bf67" />
+
 ```
 import java.util.Scanner;
 

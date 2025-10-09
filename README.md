@@ -4,10 +4,10 @@ This repository contains the homework assignments I completed as part of the Jav
 
 ## Projects
 
-*   **Grade Calculator (`Odev_1.java`):** A simple console application that calculates the average of student grades.
-*   **KDV Calculator (`Odev_2.java`):** Calculates the KDV (VAT) amount for a given price.
-*   **Triangle Area Calculator (`Odev_3.java`):** Calculates the area of a triangle given its sides.
-*   **Taximeter (`Odev_4.java`):** A basic taximeter fare calculator.
-*   **Circle Area & Perimeter (`Odev_5.java`):** Calculates the area and perimeter of a circle.
+*   **Grade Calculator (` GradeCalculator.java`):** A simple console application that calculates the average of student grades.
+*   **KDV Calculator (`KdvCalculator.java`):** Calculates the KDV (VAT) amount for a given price.
+*   **Triangle Area Calculator (`TriangleAreaCalculator.java`):** Calculates the area of a triangle given its sides.
+*   **Taximeter (`Taximeter.java`):** A basic taximeter fare calculator.
+*   **Circle Area & Perimeter (`CircleAreaPerimeter.java`):** Calculates the area and perimeter of a circle.
 
 Each file can be compiled and run individually.

@@ -5,15 +5,25 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.tunisch</groupId>
-    <artifactId>java-lesson</artifactId>
+    <artifactId>java-lessons</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>25</maven.compiler.source>
-        <maven.compiler.target>25</maven.compiler.target>
+        <!--
+            1. Java versiyonunu stabil bir LTS (Uzun Süreli Destek) versiyonu olan 17'ye çekiyoruz.
+            2. Projenin farklı sistemlerde karakter sorunu yaşamaması için UTF-8 ekliyoruz.
+        -->
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
-        <!-- İhtiyacına göre ekle -->
+        <!--
+            Kodunu test etmek için en popüler kütüphane olan JUnit 5'i ekliyoruz.
+            'scope>test' etiketi, bu kütüphanenin sadece test kodları çalıştırılırken kullanılacağını,
+            ana program paketlenirken dahil edilmeyeceğini belirtir. Bu, en iyi pratiktir.
+        -->
     </dependencies>
+
 </project>

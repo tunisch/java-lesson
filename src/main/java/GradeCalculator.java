@@ -30,5 +30,7 @@ public class GradeCalculator {
         double ortalama = (mat + fiz + kim + turk + tarih + muzik) / 6.0;
 
         System.out.println("Ortalamaniz : " + ortalama);
+        String result = (ortalama > 60) ? "Sinifi gecti" : "sinifta kaldi";
+        System.out.println(result);
     }
 }

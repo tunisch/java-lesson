@@ -50,7 +50,7 @@ public class JavaPatika {public static void main(String[] args) {
 }
 ```
 
-1. Scanner sınıfını içe aktarma (import)
+## 1. Scanner sınıfını içe aktarma (import)
 
 Scanner sınıfı java.util paketinde yer alır. Dolayısıyla kodun en üst kısmına şöyle bir satır eklemeliyiz:
 
@@ -58,9 +58,9 @@ import java.util.Scanner;
 
 
 Ya da birden fazla sınıf kullanacaksak:
-
+```
 import java.util.*;
-
+```
 
 Bu sayede Scanner sınıfını doğrudan kullanabiliriz. 
 Medium
@@ -68,7 +68,7 @@ Medium
 w3schools.com
 +2
 
-2. Scanner nesnesi oluşturma
+## 2. Scanner nesnesi oluşturma
 
 Konsoldan (klavyeden) girdi almak için System.in kullanılır. Scanner ile bunu şöyle yaparsınız:
 
@@ -76,12 +76,8 @@ Scanner scanner = new Scanner(System.in);
 
 
 Burada scanner objesinin adı sizin tercihinizdir (örneğin input, reader gibi). 
-Medium
-+2
-Udemy Blog
-+2
 
-3. Kullanıcıdan veri okuma
+## 3. Kullanıcıdan veri okuma
 
 Scanner sınıfı, farklı veri tiplerini okumak için farklı metotlara sahiptir. Genel yapı:
 
@@ -99,6 +95,7 @@ next()	String	Bir kelime okur (boşlukla ayrılmış kısmı)
 nextLine()	String	Satırın tamamını okur (boşluk dahil)
 nextBoolean()	boolean	true veya false okur
 
+```
 Örneğin:
 
 int a = scanner.nextInt();
@@ -106,5 +103,6 @@ double d = scanner.nextDouble();
 String s = scanner.next();       // tek kelime
 String line = scanner.nextLine(); // tam satır
 
+```
 
 Java documentation da bu metotların kullanımını gösteriyor.

@@ -1,5 +1,5 @@
 import java.util.Scanner; // kullanicidan veri almaya yarayan kutuphanedir.
-public class Odev_1 {
+public class GradeCalculator {
     public static void main(String[] args) {
         // Degiskenleri olustur
         int mat,fiz,kim,turk,tarih,muzik;

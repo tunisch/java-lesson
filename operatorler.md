@@ -46,7 +46,7 @@ Java'da Koşul Operatörleri ifadelerin sonucunda oluşacak olayları belirler.
 - b = (a == 1) ? 1 : 0
 - Çıktısı : 0
 
-## Ternary Operator
+## Conditional (Ternary) Operator
 Ternary Operator (üçlü operatör), Java’da if-else yapısının kısa hali olarak kullanılan bir operatördür.
 Kısaca, bir koşulu (condition) test eder ve bu koşulun true veya false olmasına göre iki farklı değer döndürür.
 
@@ -135,6 +135,126 @@ Bir nesnenin (object) belirli bir sınıftan (class) olup olmadığını kontrol
 ```
 String ad = "Tunahan";
 boolean kontrol = ad instanceof String; // true
+```
+## Type Casting (Tür Dönüştürme Operatörü)
+
+Amaç:
+Bir veri tipini başka bir veri tipine dönüştürmek için kullanılır.
+Java’da primitive türlerde ( ) parantez kullanılır.
+Objelerde ise upcasting / downcasting şeklinde yapılır.
+
+### Sözdizimi:
+```
+(targetType) value;
+```
+#### Örnek:
+```
+int num = 10;
+double converted = (double) num; // int → double
+
+System.out.println(converted); // 10.0
+```
+### Object Casting (Downcasting):
+```
+Animal a = new Dog(); // upcasting
+Dog d = (Dog) a;      // downcasting
+d.bark();
+```
+## Object / Member Access Operator (.)
+Amaç:
+Bir sınıfın (class) özelliklerine (fields) veya metotlarına (methods) erişmek için kullanılır.
+
+### Sözdizimi:
+```
+objectName.memberName
+```
+#### Örnek:
+```
+public class Person {
+    String name = "Ahmet";
+    void greet() {
+        System.out.println("Merhaba " + name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person p = new Person();
+        System.out.println(p.name); // field erişimi
+        p.greet(); // metot çağrısı
+    }
+}
+```
+## Lambda Expression Operator (->)
+
+Amaç:
+Java 8 ile gelen functional programming yapısını destekler.
+Lambda ifadesi, anonim (ismi olmayan) fonksiyonlar tanımlamak için kullanılır.
+-> operatörü, parametreleri ve fonksiyon gövdesini birbirinden ayırır.
+
+### Sözdizimi:
+```
+(parameters) -> expression
+(parameters) -> { statements }
+```
+
+#### Örnek:
+```
+// Tek satırlık lambda
+Runnable r = () -> System.out.println("Çalıştı!");
+r.run();
+
+// Parametreli lambda
+Function<Integer, Integer> kareAl = x -> x * x;
+System.out.println(kareAl.apply(5)); // 25
+```
+## Method Reference Operator (::)
+
+Amaç:
+Lambda ifadelerinin kısa yazımıdır.
+Var olan bir metodu referans olarak aktarır.
+
+### Sözdizimi:
+```
+ClassName::methodName
+```
+
+#### Örnek:
+```
+List<String> isimler = Arrays.asList("Ali", "Veli", "Ayşe");
+
+// Lambda ile
+isimler.forEach(isim -> System.out.println(isim));
+
+// Method reference ile
+isimler.forEach(System.out::println);
+```
+## Annotation Operator (@)
+
+Amaç:
+Kod hakkında ek bilgi (metadata) sağlar.
+Derleyiciye veya çalışma zamanına özel bilgi verir.
+Örnekler: @Override, @Deprecated, @SuppressWarnings
+
+### Sözdizimi:
+```
+@AnnotationName
+```
+
+#### Örnek:
+```
+class Parent {
+    void speak() {
+        System.out.println("Parent konuşuyor");
+    }
+}
+
+class Child extends Parent {
+    @Override
+    void speak() {
+        System.out.println("Child konuşuyor");
+    }
+}
 ```
 
 # 📚 Referanslar

@@ -1,34 +1,97 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-.kotlin
+# ============================================
+# JAVA + MAVEN + INTELLIJ IDEA .gitignore
+# ============================================
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
-.vscode/
-
-### Mac OS ###
-.DS_Store
-
-### Java derleme ciktilari
-*.class
+# -------- Maven build output --------
 target/
+!src/main/**/target/
+!src/test/**/target/
+
+# -------- IntelliJ IDEA --------
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# -------- Eclipse / NetBeans (kullansan bile karışmasın diye) --------
+.classpath
+.project
+.settings/
+.nb-gradle/
+nbproject/
+
+# -------- OS (işletim sistemi) dosyaları --------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# -------- Java build artifacts --------
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# -------- Logs --------
+*.log
+*.out
+*.tmp
+
+# -------- Environment / Local Configs --------
+.env
+.env.local
+*.local.properties
+
+# -------- IntelliJ cache / indexes --------
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/shelf/
+.idea/httpRequests/
+.idea/dataSources/
+.idea/sonarlint/
+.idea/libraries/
+.idea/caches/
+
+# -------- Maven Wrapper (opsiyonel, ister tut ister sil) --------
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# -------- Test reports, coverage, profiling --------
+*.coverage
+*.coverage.xml
+*.hprof
+*.pid
+*.gc
+*.stackdump
+
+# -------- Temporary Files --------
+*.bak
+*.swp
+*.swo
+*.tmp
+
+# -------- JetBrains Local Run Configs --------
+.idea/runConfigurations.xml
+.idea/gradle.xml
+.idea/compiler.xml
+.idea/misc.xml
+.idea/modules.xml
+
+# -------- IDE metadata (diğer editörler) --------
+.vscode/
+.history/

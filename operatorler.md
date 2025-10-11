@@ -9,9 +9,18 @@ Java'da operatörler aşağıdaki gibi listelenebilir:
 - İlişkisel ve Eşitlik Operatörler
 - Koşul Operatörler
 - Mantıksal Operatörler
-
+🧮 Java Operatörlerinin Sözdizimleri (Formülleri)
 ## Atama Operatörü
 <img width="689" height="364" alt="image" src="https://github.com/user-attachments/assets/8ff2e04f-fa05-490b-aaed-18a5378e6576" />
+
+| Operatör | Sözdizimi (Formül)   | Açıklama                       |
+| -------- | -------------------- | ------------------------------ |
+| `=`      | `değişken = değer;`  | Sağdaki değeri sola atar       |
+| `+=`     | `değişken += değer;` | `değişken = değişken + değer;` |
+| `-=`     | `değişken -= değer;` | `değişken = değişken - değer;` |
+| `*=`     | `değişken *= değer;` | `değişken = değişken * değer;` |
+| `/=`     | `değişken /= değer;` | `değişken = değişken / değer;` |
+| `%=`     | `değişken %= değer;` | `değişken = değişken % değer;` |
 
 ## Aritmetik Operatörler
 Java'da Aritmetik Operatörler adından da anlaşılacağı üzere matematiksel işlemleri programlama dilinde uygulamamızı sağlarlar.
@@ -23,6 +32,114 @@ Java'da Aritmetik Operatörler adından da anlaşılacağı üzere matematiksel 
 - Mod alma : a % b
 - 1 arttırma : a++
 - 1 eksiltme : b--
+### 🔢 İleri Düzey Aritmetik Operatör Örnekleri (Java)
+#### 1️⃣ Modül ve Birleşik İşlem Örneği
+```
+public class AdvancedMath1 {
+    public static void main(String[] args) {
+        int x = 17;
+        int y = 5;
+        int result = (x % y) + (x / y) * 2; // 2 + 6 = 8
+        System.out.println("Sonuç: " + result);
+    }
+}
+```
+### 2️⃣ Üs Alma (Math.pow) ve Karekök Hesabı
+```
+public class AdvancedMath2 {
+    public static void main(String[] args) {
+        double a = 4;
+        double b = 3;
+        double result = Math.pow(a, b) + Math.sqrt(a * b);
+        System.out.println("Sonuç: " + result);
+    }
+}
+```
+Açıklama:
+- Math.pow(4, 3) = 4³ = 64
+- Math.sqrt(4*3) = √12 ≈ 3.464
+  ➡️ Sonuç: 67.464
+### 3️⃣ Artırma ve Azaltma Operatörlerinin Etkileşimi
+```
+public class AdvancedMath3 {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = ++a * 2 + a--; // (6*2)+6 = 18
+        System.out.println("a: " + a + ", b: " + b);
+    }
+}
+```
+#### Açıklama:
+
+- ++a → önce artır, sonra kullan → a = 6
+- a-- → önce kullan, sonra azalt
+- Hesap sırası: (6 * 2) + 6 = 18
+- Son durumda a = 5, b = 18
+### 4️⃣ Karışık Parantezli İşlem Örneği
+```
+public class AdvancedMath4 {
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 4;
+        int z = 2;
+        int result = (x + y) * z % (y + z) - x / z;
+        System.out.println("Sonuç: " + result);
+    }
+}
+```
+#### Açıklama:
+- (x + y) * z → (10 + 4) * 2 = 28
+- (y + z) → 6
+- 28 % 6 → 4
+- x / z → 10 / 2 = 5
+- 4 - 5 = -1
+  ➡️ Sonuç: -1
+### 5️⃣ Kombine Atama Operatörleri (+=, -=, *=, /=, %=)
+```
+public class AdvancedMath5 {
+    public static void main(String[] args) {
+        int num = 10;
+        num += 5;   // 15
+        num *= 2;   // 30
+        num %= 7;   // 2 (30 mod 7)
+        System.out.println("Sonuç: " + num);
+    }
+}
+```
+Açıklama:
+Sırasıyla işlemler uygulanır:
+
+num += 5 → 15
+
+num *= 2 → 30
+
+num %= 7 → 2
+➡️ Sonuç: 2
+### 6️⃣ Negatif ve Pozitif Operatörlerin Karışımı
+```
+public class AdvancedMath6 {
+    public static void main(String[] args) {
+        int a = -5;
+        int b = 3;
+        int result = -a + ++b * (-a % b);
+        System.out.println("Sonuç: " + result);
+    }
+}
+```
+Açıklama:
+
+-a → 5
+
+++b → 4
+
+(-a % b) → 5 % 4 = 1
+
+5 + 4 * 1 = 9
+➡️ Sonuç: 9
+
+
+
+
 
 ## Karşılaştırma Operatörleri
 Java'da Karşılaştırma Operatörleri iki nesnenin birbirleriyle olan durumlarını belirler.
@@ -35,6 +152,12 @@ Java'da Karşılaştırma Operatörleri iki nesnenin birbirleriyle olan durumlar
 - Küçük Eşittir : a <= b
 ## Mantıksal Operatörler
 Java'da Mantıksal Operatörler , nesnelerin veya ifadelerin mantıksal değerlerini yansıtır.
+| Operatör | Sözdizimi (Formül)   | Açıklama                       |          |   |          |                      |
+| -------- | -------------------- | ------------------------------ | -------- | - | -------- | -------------------- |
+| `&&`     | `(kosul1 && kosul2)` | VE (her iki koşul da true ise) |          |   |          |                      |
+| `        |                      | `                              | `(kosul1 |   | kosul2)` | VEYA (biri true ise) |
+| `!`      | `!(kosul)`           | DEĞİL (sonucu tersine çevirir) |          |   |          |                      |
+
 
 - Ve : a && b
 - Veya : a || b
@@ -163,6 +286,10 @@ d.bark();
 ## Object / Member Access Operator (.)
 Amaç:
 Bir sınıfın (class) özelliklerine (fields) veya metotlarına (methods) erişmek için kullanılır.
+| Operatör | Sözdizimi (Formül) | Açıklama                |
+| -------- | ------------------ | ----------------------- |
+| `.`      | `nesne.üyeAdi`     | Alan veya metot erişimi |
+
 
 ### Sözdizimi:
 ```
@@ -192,6 +319,12 @@ Java 8 ile gelen functional programming yapısını destekler.
 Lambda ifadesi, anonim (ismi olmayan) fonksiyonlar tanımlamak için kullanılır.
 -> operatörü, parametreleri ve fonksiyon gövdesini birbirinden ayırır.
 
+| Operatör | Sözdizimi (Formül)               | Açıklama            |
+| -------- | -------------------------------- | ------------------- |
+| `->`     | `(parametreler) -> ifade`        | Tek satırlık lambda |
+| `->`     | `(parametreler) -> { kodBloğu }` | Çok satırlı lambda  |
+
+
 ### Sözdizimi:
 ```
 (parameters) -> expression
@@ -213,6 +346,10 @@ System.out.println(kareAl.apply(5)); // 25
 Amaç:
 Lambda ifadelerinin kısa yazımıdır.
 Var olan bir metodu referans olarak aktarır.
+
+| Operatör | Sözdizimi (Formül)   | Açıklama        |
+| -------- | -------------------- | --------------- |
+| `::`     | `SınıfAdi::metotAdi` | Lambda kısayolu |
 
 ### Sözdizimi:
 ```

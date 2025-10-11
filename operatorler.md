@@ -55,7 +55,7 @@ public class AdvancedMath2 {
     }
 }
 ```
-Açıklama:
+#### Açıklama:
 - Math.pow(4, 3) = 4³ = 64
 - Math.sqrt(4*3) = √12 ≈ 3.464
   ➡️ Sonuç: 67.464
@@ -106,15 +106,12 @@ public class AdvancedMath5 {
     }
 }
 ```
-Açıklama:
+#### Açıklama:
 Sırasıyla işlemler uygulanır:
-
-num += 5 → 15
-
-num *= 2 → 30
-
-num %= 7 → 2
-➡️ Sonuç: 2
+- num += 5 → 15
+- num *= 2 → 30
+- num %= 7 → 2
+  ➡️ Sonuç: 2
 ### 6️⃣ Negatif ve Pozitif Operatörlerin Karışımı
 ```
 public class AdvancedMath6 {
@@ -126,16 +123,12 @@ public class AdvancedMath6 {
     }
 }
 ```
-Açıklama:
-
--a → 5
-
-++b → 4
-
-(-a % b) → 5 % 4 = 1
-
-5 + 4 * 1 = 9
-➡️ Sonuç: 9
+#### Açıklama:
+- -a → 5
+- ++b → 4
+- (-a % b) → 5 % 4 = 1
+- 5 + 4 * 1 = 9
+  ➡️ Sonuç: 9
 
 
 

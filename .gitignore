@@ -35,7 +35,6 @@ bin/
 /target/
 
 # Maven build output
-target/
 !src/main/**/target/
 !src/test/**/target/
 

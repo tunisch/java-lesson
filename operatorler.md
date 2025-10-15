@@ -143,6 +143,7 @@ Java'da Karşılaştırma Operatörleri iki nesnenin birbirleriyle olan durumlar
 - Küçüktür : a < b
 - Büyük Eşittir : a >= b
 - Küçük Eşittir : a <= b
+
 ## Mantıksal Operatörler
 Java'da Mantıksal Operatörler , nesnelerin veya ifadelerin mantıksal değerlerini yansıtır.
 | Operatör | Sözdizimi (Formül)   | Açıklama                       |          |   |          |                      |
@@ -167,7 +168,7 @@ Ternary Operator (üçlü operatör), Java’da if-else yapısının kısa hali 
 Kısaca, bir koşulu (condition) test eder ve bu koşulun true veya false olmasına göre iki farklı değer döndürür.
 
 ### 🧠 Genel Sözdizimi (Syntax)
-```
+```java
 variable = (condition) ? value_if_true : value_if_false;
 ```
 - condition → test etmek istediğin ifade (örneğin: a > b)
@@ -191,7 +192,7 @@ En büyük sayı: 20
 ```
 ### 💡 if-else ile aynı örnek
 Yukarıdaki örneği normal if-else ile yazarsak:
-```
+```java
 int max;
 if (a > b) {
     max = a;

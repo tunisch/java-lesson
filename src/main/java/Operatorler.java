@@ -14,5 +14,13 @@ public class Operatorler {
         System.out.println(str);
         int result = sonuc ? 1 : 0;
         System.out.println(result);
+
+        /* KARSILASTIRMA OPERTATORLERI ORNEKLERLE  */
+
+
+
+
+
+
     }
 }

@@ -3,8 +3,8 @@ public class Operatorler {
         int a = 5, b = 6, c = 5;
         boolean kosul1 = a == c;
         boolean kosul2 = a >= b;
-        boolean sonuc = kosul1 || kosul2; // " || " demek
-        boolean sonuc2 = kosul1 && kosul2;
+        boolean sonuc = kosul1 || kosul2; // " || " veya demektir herhangi biri dogru olursa kosullardan, sonuc true kabul edilir.
+        boolean sonuc2 = kosul1 && kosul2; // " && " ve demektir iki kosulda dogru olmalidir ya da yanlis olmalidir true olabilmesi icin. 
 
         String str = sonuc ? "Doğru " : "Degil";
         // System.out.println("|| sonucu: " + sonuc);

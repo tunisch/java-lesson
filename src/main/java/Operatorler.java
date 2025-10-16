@@ -4,7 +4,7 @@ public class Operatorler {
         boolean kosul1 = a == c;
         boolean kosul2 = a >= b;
         boolean sonuc = kosul1 || kosul2; // " || " veya demektir herhangi biri dogru olursa kosullardan, sonuc true kabul edilir.
-        boolean sonuc2 = kosul1 && kosul2; // " && " ve demektir iki kosulda dogru olmalidir ya da yanlis olmalidir true olabilmesi icin. 
+        boolean sonuc2 = kosul1 && kosul2; // " && " ve demektir iki kosulda dogru olmalidir true olabilmesi icin. 
 
         String str = sonuc ? "Doğru " : "Degil";
         // System.out.println("|| sonucu: " + sonuc);

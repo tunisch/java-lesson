@@ -34,7 +34,7 @@ Java'da Aritmetik Operatörler adından da anlaşılacağı üzere matematiksel 
 - 1 eksiltme : b--
 ### 🔢 İleri Düzey Aritmetik Operatör Örnekleri (Java)
 #### 1️⃣ Modül ve Birleşik İşlem Örneği
-```
+```java
 public class AdvancedMath1 {
     public static void main(String[] args) {
         int x = 17;
@@ -45,7 +45,7 @@ public class AdvancedMath1 {
 }
 ```
 ### 2️⃣ Üs Alma (Math.pow) ve Karekök Hesabı
-```
+```java
 public class AdvancedMath2 {
     public static void main(String[] args) {
         double a = 4;
@@ -60,7 +60,7 @@ public class AdvancedMath2 {
 - Math.sqrt(4*3) = √12 ≈ 3.464
   ➡️ Sonuç: 67.464
 ### 3️⃣ Artırma ve Azaltma Operatörlerinin Etkileşimi
-```
+```java
 public class AdvancedMath3 {
     public static void main(String[] args) {
         int a = 5;
@@ -76,7 +76,7 @@ public class AdvancedMath3 {
 - Hesap sırası: (6 * 2) + 6 = 18
 - Son durumda a = 5, b = 18
 ### 4️⃣ Karışık Parantezli İşlem Örneği
-```
+```java
 public class AdvancedMath4 {
     public static void main(String[] args) {
         int x = 10;
@@ -95,7 +95,7 @@ public class AdvancedMath4 {
 - 4 - 5 = -1
   ➡️ Sonuç: -1
 ### 5️⃣ Kombine Atama Operatörleri (+=, -=, *=, /=, %=)
-```
+```java
 public class AdvancedMath5 {
     public static void main(String[] args) {
         int num = 10;
@@ -113,7 +113,7 @@ Sırasıyla işlemler uygulanır:
 - num %= 7 → 2
   ➡️ Sonuç: 2
 ### 6️⃣ Negatif ve Pozitif Operatörlerin Karışımı
-```
+```java
 public class AdvancedMath6 {
     public static void main(String[] args) {
         int a = -5;
@@ -129,10 +129,6 @@ public class AdvancedMath6 {
 - (-a % b) → 5 % 4 = 1
 - 5 + 4 * 1 = 9
   ➡️ Sonuç: 9
-
-
-
-
 
 ## Karşılaştırma Operatörleri
 Java'da Karşılaştırma Operatörleri iki nesnenin birbirleriyle olan durumlarını belirler.
@@ -197,14 +193,17 @@ Sonucu tersine çevirir.
 Örnek
 x'i 5 olarak ele alalım.
 x<10 ifadesi True dönecektir. Ancak !(x<5) olarak yazarsak sonuç False olacaktır.
-
+```
 ### Soru İşareti Operatörü
 ? işareti operatörü ile Java'da mantıksal kıyaslama yapılabilir. ? ifadesi Java'daki "if-else" yapısı yerine kullanılabilir. Tek satırda bunu yapabilmemizi sağlar. Kullanımı ise if'in içerisinde yer alacak ifadeyi soru işaretinden önce yazılır, ifadenin doğru olması durumunda yapılacak işlemler soru işareti ile iki nokta arasına yazılır. İfadenin yanlış olması durumunda yapılacaklar ise iki noktadan sonra yazılır.
-Kullanımı :
+
 ```
+Kullanımı :
 ( kontrol edilecek ifade ) ? doğru olması durumunda yapılacaklar : yanlış olması durumunda yapılacaklar
 ```
-#### Örnek :
+
+Örnek :
+
 ```java
 public class Test {
 
@@ -242,7 +241,7 @@ variable = (condition) ? value_if_true : value_if_false;
 - value_if_false → koşul yanlışsa dönecek değer
 
 ### 🔍 Basit Bir Örnek
-```
+```java
 int a = 10;
 int b = 20;
 
@@ -269,7 +268,7 @@ if (a > b) {
 Ternary operatörü bunu tek satıra indirir.
 Yani kodun okunabilirliğini artırır, ama karmaşık koşullarda dikkatli kullanılmalıdır.
 #### ⚙️ Başka bir örnek (String ile)
-```
+```java
 int yas = 18;
 String sonuc = (yas >= 18) ? "Reşit" : "Reşit değil";
 System.out.println(sonuc);
@@ -280,7 +279,7 @@ System.out.println(sonuc);
 Reşit
 ```
 #### 🔁 İç içe (nested) ternary örneği
-```
+```java
 int sayi = 0;
 String sonuc = (sayi > 0) ? "Pozitif" : (sayi < 0) ? "Negatif" : "Sıfır";
 System.out.println(sonuc);
@@ -315,7 +314,7 @@ Ancak iç içe ternary ifadeleri okunması zorlaşabilir, bu yüzden sadece basi
 
 ## 🧱 instanceof Operatörü
 Bir nesnenin (object) belirli bir sınıftan (class) olup olmadığını kontrol eder.
-```
+```java
 String ad = "Tunahan";
 boolean kontrol = ad instanceof String; // true
 ```
@@ -327,18 +326,18 @@ Java’da primitive türlerde ( ) parantez kullanılır.
 Objelerde ise upcasting / downcasting şeklinde yapılır.
 
 ### Sözdizimi:
-```
+```java
 (targetType) value;
 ```
 #### Örnek:
-```
+```java
 int num = 10;
 double converted = (double) num; // int → double
 
 System.out.println(converted); // 10.0
 ```
 ### Object Casting (Downcasting):
-```
+```java
 Animal a = new Dog(); // upcasting
 Dog d = (Dog) a;      // downcasting
 d.bark();
@@ -352,11 +351,11 @@ Bir sınıfın (class) özelliklerine (fields) veya metotlarına (methods) eriş
 
 
 ### Sözdizimi:
-```
+```java
 objectName.memberName
 ```
 #### Örnek:
-```
+```java
 public class Person {
     String name = "Ahmet";
     void greet() {
@@ -386,13 +385,13 @@ Lambda ifadesi, anonim (ismi olmayan) fonksiyonlar tanımlamak için kullanılı
 
 
 ### Sözdizimi:
-```
+```java
 (parameters) -> expression
 (parameters) -> { statements }
 ```
 
 #### Örnek:
-```
+```java
 // Tek satırlık lambda
 Runnable r = () -> System.out.println("Çalıştı!");
 r.run();
@@ -412,12 +411,12 @@ Var olan bir metodu referans olarak aktarır.
 | `::`     | `SınıfAdi::metotAdi` | Lambda kısayolu |
 
 ### Sözdizimi:
-```
+```java
 ClassName::methodName
 ```
 
 #### Örnek:
-```
+```java
 List<String> isimler = Arrays.asList("Ali", "Veli", "Ayşe");
 
 // Lambda ile
@@ -434,12 +433,12 @@ Derleyiciye veya çalışma zamanına özel bilgi verir.
 Örnekler: @Override, @Deprecated, @SuppressWarnings
 
 ### Sözdizimi:
-```
+```java
 @AnnotationName
 ```
 
 #### Örnek:
-```
+```java
 class Parent {
     void speak() {
         System.out.println("Parent konuşuyor");

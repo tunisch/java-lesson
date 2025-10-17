@@ -57,7 +57,7 @@ else{
   System.out.println("i nin degeri 10'dan farklıdır ve 10'dan kücük degildir.");   
 }
 ```
-Sizce yukarıda yazdığımız kodun Console çıktısı nedir ?
+- Sizce yukarıda yazdığımız kodun Console çıktısı nedir ?
 
 i nin degeri 10'dan farklıdır ve 10'dan kücük degildir.
 Örneğin tuz oranı %80 ve üzerinde ise "yüksek derecede tuzlu", %80 ile %50 arasında ise "orta derecede tuzlu", bunların dışında bir durumda ise "düşük derecede tuzlu" şeklinde ekrana bilgiler yazan bir program yazmak istediğimizde if-else if-else yapısını kullanabiliriz.
@@ -73,7 +73,7 @@ else {
 	System.out.println("düşük derecede tuzlu");
 }
 ```
-"if-else" yapılarını iç içe de kullanma şansına sahibiz.
+- "if-else" yapılarını iç içe de kullanma şansına sahibiz.
 ```java
 Örneğin: 18 yaşından küçük olanlar kan bağışı yapamazlar, fakat, 18 yaşına eşit ve büyük olan bir kişi eğer kilosu 48'den büyükse kan verebilir, kilosu 48'den küçükse kan veremez gibi basit bir kuralı Java'da kodlayalım.
 
@@ -94,6 +94,7 @@ else{
   System.out.println("Kan verebilmek için yaşınız 18'den büyük olmalıdır.");  
 } 
 ```
-Sizce yukarıda yazdığımız kodun Console çıktısı nedir ?
-
+- Sizce yukarıda yazdığımız kodun Console çıktısı nedir ?
+```
 Kan verebilirsiniz.
+```

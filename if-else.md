@@ -59,7 +59,7 @@ else{
 ```
 - Sizce yukarıda yazdığımız kodun Console çıktısı nedir ?
 
-i nin degeri 10'dan farklıdır ve 10'dan kücük degildir.
+* i nin degeri 10'dan farklıdır ve 10'dan kücük degildir.
 Örneğin tuz oranı %80 ve üzerinde ise "yüksek derecede tuzlu", %80 ile %50 arasında ise "orta derecede tuzlu", bunların dışında bir durumda ise "düşük derecede tuzlu" şeklinde ekrana bilgiler yazan bir program yazmak istediğimizde if-else if-else yapısını kullanabiliriz.
 ```java
 float saltRatio = 0.9f;

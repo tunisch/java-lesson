@@ -73,7 +73,15 @@ else {
 	System.out.println("düşük derecede tuzlu");
 }
 ```
-- "if-else" yapılarını iç içe de kullanma şansına sahibiz.
+### 🧩 1️⃣ İç içe if (Nested if) — “Şartlar sırayla test edilecekse”
+#### 🧠 Ne zaman kullanılır:
+- Bir koşul doğru olduktan sonra ancak o durumda başka bir koşulu kontrol etmek istiyorsan.
+- Yani: “Eğer şu oluyorsa, o zaman bu da olmalı.”
+
+##### 📘 Kullanım senaryoları:
+- Bir işlem adım adım ilerliyorsa
+- Önce temel bir şart, sonra alt detaylar kontrol ediliyorsa
+- Her koşulun içinde farklı bir hata veya açıklama mesajı göstermek istiyorsan
 ```java
 Örneğin: 18 yaşından küçük olanlar kan bağışı yapamazlar, fakat, 18 yaşına eşit ve büyük olan bir kişi eğer kilosu 48'den büyükse kan verebilir, kilosu 48'den küçükse kan veremez gibi basit bir kuralı Java'da kodlayalım.
 
@@ -98,3 +106,64 @@ else{
 ```
 Kan verebilirsiniz.
 ```
+### ⚙️ 2️⃣ Mantıksal Operatörlerle If (&&, ||, !) — “Tüm şartlar aynı anda geçerli olmalıysa”
+#### 🧠 Ne zaman kullanılır:
+
+- Birden fazla koşulu tek seferde kontrol etmek istiyorsan.
+- Yani tüm şartlar aynı seviyedeyse, biri diğerine bağlı değilse.
+
+##### 📘 Kullanım senaryoları:
+
+- Giriş izni, yetki, form doğrulama gibi durumlar
+- “Hepsi doğru olmalı” veya “en az biri doğru olmalı” kontrollerinde
+- İç içe if yazmak istemediğinde
+```java
+if (yas >= 18 && ehliyetVarMi && gozTestiGectiMi) {
+    System.out.println("Araba kullanabilirsiniz.");
+} else {
+    System.out.println("Şartlardan biri sağlanmıyor.");
+}
+```
+##### 🟢 Avantajı:
+
+- Daha kısa ve okunabilir
+- İç içe if’e göre daha temiz
+- “Hepsi doğruysa” mantığını tek satırda yazar
+
+##### 🔴 Dezavantajı:
+- Hangi şartın neden yanlış olduğunu görmek zordur.
+- “Neden başarısız?” sorusuna net yanıt vermez (tek bir else bloğu vardır).
+### ⚡ 3️⃣ Ternary If (?:) — “Basit true/false kararlarında”
+#### 🧠 Ne zaman kullanılır:
+Bir koşula göre tek bir değer atayacaksan veya tek satırlık karar vereceksen.
+
+#### 📘 Kullanım senaryoları:
+
+- Kısa çıktı üretmek
+- Değişken ataması yapmak
+- Konsola veya GUI’ye kısa mesaj yazmak
+```java
+String mesaj = (puan >= 50) ? "Geçti" : "Kaldı";
+System.out.println(mesaj);
+```
+##### 🟢 Avantajı:
+- Çok kısa ve temiz
+- Bir değişkene atama yaparken pratik
+
+##### 🔴 Dezavantajı:
+- Koşul karmaşık hale gelirse okunması zorlaşır.
+
+```java
+String sonuc = (a > b && c < d) ? (x == y ? "A" : "B") : "C"; // Okuması zor!
+```
+Bu gibi durumlarda klasik if-else daha okunabilir olur.
+### Hangisi Ne Zaman Kullanılır?
+
+| Kullanım Türü                   | Ne Zaman Tercih Edilir                                        | Avantaj                                              | Dezavantaj                              |
+| :-------------------------------| :------------------------------------------------------------ | :--------------------------------------------------- | :-------------------------------------- |
+| **İç içe if (nested if)**       | Şartlar **birbirine bağlı** olduğunda                         | Her adımın neden başarısız olduğunu anlayabilirsin   | Uzarsa karışır                          |
+| **Ternary if (?:)**             | Tek satırda **basit kararlar** için                           | En kısa yöntem                                       | Karar karmaşıklaşırsa okunamaz olur     |
+| **Mantıksal if (&&,! ya da sembolu)**         | Şartlar **bağımsız ama aynı anda kontrol edilecekse** olursa  | Kısa ve temiz                                        | Hangi şartın hatalı olduğunu bilemezsin |
+
+
+

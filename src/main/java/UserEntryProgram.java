@@ -82,7 +82,8 @@ public class UserEntryProgram {
             System.out.print("Sifrenizi sifirlamak ister misiniz? (yes/no): ");
             sifreSifirla = inp.nextLine();
 
-            if (sifreSifirla.equals("yes")) {
+            // Girilen sifreSifirla kontrolünü büyük/küçük harf farketmez yapmak için equalsIgnoreCase("yes") kullan.
+            if (sifreSifirla.equals("yes")) { // trim() kullanarak boşlukları temizlemek iyi olur: sifreSifirla.trim().equalsIgnoreCase("yes")
                 System.out.print("Yeni sifrenizi giriniz :");
                 yeniSifre = inp.nextLine();
 

@@ -91,17 +91,16 @@ public class UserEntryProgram {
                 if (yeniSifre.equals("java123") || yeniSifre.equals(password)) {
                     System.out.println("Sifre olusturulamadi, lutfen baska sifre giriniz: ");
                     yeniSifre = inp.nextLine();
-                    if(yeniSifre.equals("java123") || yeniSifre.equals(password) ){
+                    if (yeniSifre.equals("java123") || yeniSifre.equals(password)) {
                         System.out.println("Ayni sifreyi tekrar girdiniz. Program sonlandiriliyor.");
-                    }
-                     else {
+                    } else {
                         System.out.println("Sifre basariyla olusturuldu.");
                         // Bu noktada yeni şifre (newPassword) bir veritabanına kaydedilebilir.
                         // Biz şimdilik sadece eski password değişkenini güncelleyelim.
                         password = yeniSifre;
                         System.out.println("Yeni sifreniz: " + password);
                     }
-            } else {
+                } else {
                     System.out.println("Sifre basariyla olusturuldu!");
                     password = yeniSifre;
                     System.out.println("Yeni sifreniz: " + password);
@@ -112,3 +111,4 @@ public class UserEntryProgram {
         }
     }
 }
+/* ctrl + alt + l ile otomatik hizalama yapilir (reformat code) butun hepsi secilir ctrl + alt + l basilir. */

@@ -127,7 +127,7 @@ import java.util.Scanner;
 //
 //        System.out.print("Lutfen yasinizi giriniz :");
 //        yas = inp.nextInt();
-//        inp.nextLine();
+//        inp.nextLine(); // Buffer temizleme.
 //
 //        if (yas < 18) {
 //            System.out.println("Ehliyet alamazsin");

@@ -89,21 +89,18 @@ public class UserEntryProgram {
 
                 // Yeni şifre, hatalı girilen şifreyle veya bilinen eski şifreyle aynı mı diye kontrol et.
                 if (yeniSifre.equals("java123") || yeniSifre.equals(password)) {
-                    System.out.println("Sifre olusturulamadi, lutfen baska sifre giriniz: ");
+                    System.out.println("Sifre olusturulamadi! Eski veya hatali sifreyi girdiniz.");
+                    System.out.print("Lutfen baska bir sifre giriniz: ");
                     yeniSifre = inp.nextLine();
+
                     if (yeniSifre.equals("java123") || yeniSifre.equals(password)) {
                         System.out.println("Ayni sifreyi tekrar girdiniz. Program sonlandiriliyor.");
                     } else {
-                        System.out.println("Sifre basariyla olusturuldu.");
                         // Bu noktada yeni şifre (newPassword) bir veritabanına kaydedilebilir.
                         // Biz şimdilik sadece eski password değişkenini güncelleyelim.
                         password = yeniSifre;
-                        System.out.println("Yeni sifreniz: " + password);
+                        System.out.println("Sifre basariyla olusturuldu! Yeni sifreniz: " + password);
                     }
-                } else {
-                    System.out.println("Sifre basariyla olusturuldu!");
-                    password = yeniSifre;
-                    System.out.println("Yeni sifreniz: " + password);
                 }
             } else {
                 System.out.println("Sifre sifirlama islemi iptal edildi. Program sonlandiriliyor.");

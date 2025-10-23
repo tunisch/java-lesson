@@ -4,6 +4,33 @@ Java'da mantıksal ve koşullu ifadeler için if blokları kullanılır. Java 'd
 
 Koşula göre program içinde farklı işlemleri yerine getirmek gerekebilir. If-else muhtemelen yazılım programlarında en yaygın kullanılan karar mekanizmasıdır. Bu tarz durumları Java'da kodlayabilmek için if-else karar mekanizmasının yanında switch-case gibi yapılarda kullanılmaktadır. İf-else karar mekanizması istenilen koşul gerçekleştiği takdirde çalışır. Kısacası belirlenen koşul doğruysa yazılan kod çalışır.
 
+## Tek satır IF Else ({} yok)
+```java
+int x = 10;
+
+if (x > 5)
+    System.out.println("x 5'ten büyük");
+```
+
+- Bu tamamen geçerli ve çalışır.
+
+## Birden fazla satır ({} zorunlu)
+```java
+int x = 10;
+
+if (x > 5) {
+    System.out.println("x 5'ten büyük");
+    x += 2;  // ikinci satır
+    System.out.println("x'in yeni değeri: " + x);
+}
+```
+
+- Küçük ipucu:
+
+* Kod okunabilirliği için genellikle {} kullanmak önerilir, özellikle yeni başlayanlar için karışıklığı önler.
+
+* Ama tek satırlık basit işlemlerde {} yazmayabilirsin.
+
 ## Java'da Karar Mekanizmaları
 Java'da koşullu ifade ve şart oluşturmak için if ve else kullanılırız. Ayrıca else if, switch gibi koşullu ifadelere sahiptir.
 - Programımızda belirtilen bir koşul doğruysa yürütülecek bir kod bloğu belirtmek için if kullanılır.

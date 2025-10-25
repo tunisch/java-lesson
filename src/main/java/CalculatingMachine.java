@@ -34,7 +34,8 @@ public class CalculatingMachine {
                 break;
             default:
                 System.out.println("Hatali secim");
-                break;
+                break; // ← isteğe bağlı ama önerilir
+
         }
 
         /* If else with using */

@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-//public class ifElseAlistirmaDetay {
+//public class IfElseAlistirmaDetay {
 //    public static void main(String[] args) {
 //
 /* Kod blogu kavrami ve else if parantezleri kulanimi */
@@ -21,7 +21,7 @@ import java.util.Scanner;
 //        }
 //    }
 //}
-//public class ifElseAlistirmaDetay {
+//public class IfElseAlistirmaDetay {
 //    public static void main(String[] args) {
 //
 //        int yas;
@@ -44,7 +44,7 @@ import java.util.Scanner;
 
 /* else li hali */
 
-//public class ifElseAlistirmaDetay {
+//public class IfElseAlistirmaDetay {
 //    public static void main(String[] args) {
 //
 //        int yas;
@@ -71,7 +71,7 @@ import java.util.Scanner;
 
 /* Surucu Ehliyeti Sistemi */
 
-//public class ifElseAlistirmaDetay {
+//public class IfElseAlistirmaDetay {
 //    public static void main(String[] args) {
 //
 //        int yas;
@@ -117,7 +117,7 @@ import java.util.Scanner;
 //}
 
 /* Burada iç içe if'leri && operatörü kullanarak tek bir if'e düşürdük boylelıkle karmasık olmadı.*/
-//public class ifElseAlistirmaDetay {
+//public class IfElseAlistirmaDetay {
 //    public static void main(String[] args) {
 //
 //        int yas;
@@ -152,7 +152,7 @@ import java.util.Scanner;
 
 /* Daha Profesyonel Hali */
 
-public class ifElseAlistirmaDetay {
+public class IfElseAlistirmaDetay {
     public static void main(String[] args) {
 
         int yas;

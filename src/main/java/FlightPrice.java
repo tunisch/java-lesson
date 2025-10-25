@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class FlightPrice {
     public static void main(String[] args) {
-        double distance, constantPrice = 0.10, totalPrice, flightDiscount = 0;
+        double distance, constantPrice = 0.10, totalPrice, flightDiscount;
         int age, flightType;
 
         Scanner inp = new Scanner(System.in);

@@ -23,11 +23,12 @@ int left = 100, right = 200;
 while (++left < --right);
 System.out.println("100 ile 200'ün ortası: " + left);
 ```
-Bu algoritma, 100 ile 200’ün arasında tam ortada bulunan sayıyı bulmamızı sağlar. Kodu çalıştırdığımızda çıktısı şu şekilde olur:
-100 ile 200'ün ortası: 150
+- Bu algoritma, 100 ile 200’ün arasında tam ortada bulunan sayıyı bulmamızı sağlar. Kodu çalıştırdığımızda çıktısı şu şekilde olur:
+- 100 ile 200'ün ortası: 150
 Gördüğünüz üzere, içeriği olmasa bile bazı durumlarda döngüler fayda sağlayabilir.
 
-- Yani while döngüsü genellikle işlemin kaç kez tekrar edeceği bilinmediği durumda kullanılır. Örneğin: müşterinin hesabına giriş şifresini kaç kez yanlış gireceğini bilemeyiz. Bu nedenle bu tarz durumlarda "while" döngüsü tercih edilir hemen aşağıdaki örnekte olduğu gibi.
+- Yani while döngüsü genellikle işlemin kaç kez tekrar edeceği bilinmediği durumda kullanılır.
+- Örneğin: müşterinin hesabına giriş şifresini kaç kez yanlış gireceğini bilemeyiz. Bu nedenle bu tarz durumlarda "while" döngüsü tercih edilir hemen aşağıdaki örnekte olduğu gibi.
 ```java
 Scanner scanner = new Scanner(System.in);
 String customerPassword = "12345";

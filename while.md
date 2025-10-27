@@ -45,4 +45,5 @@ while(!passwordSuccessfull) {
 	}
 }
 ```
-- Java programla dilinde while döngüleri yapacağımız işin ne zaman biteceğiniz bilmediğimiz durumlarda kullanışlı olabilmektedir.
+## Ne zaman kullanilir ? 
+- Java programla dilinde while döngüleri yapacağımız *işin ne zaman biteceğini bilmediğimiz durumlarda* kullanışlı olabilmektedir.

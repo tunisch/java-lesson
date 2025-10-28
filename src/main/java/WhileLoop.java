@@ -51,7 +51,7 @@ public class WhileLoop {
             password = inp.nextInt();
             if (password == 123) {
                 System.out.println("Dogru");
-                isPasswordSuccess = true; //eger true olursa while ici flase olcak ve while dan cikmis olcaz o yuzden sonsuz dongu olmasin diye yaptik!!
+                isPasswordSuccess = true; //eger true olursa while ici false olcak ve while dan cikmis olcaz o yuzden sonsuz dongu olmasin diye yaptik!!
             } else {
                 System.out.println("Yanlis");
             }

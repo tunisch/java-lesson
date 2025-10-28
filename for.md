@@ -42,3 +42,26 @@ for (int i = 0; i < 5; i++) {
 - Diziler ve koleksiyonlar üzerinde işlem yapmak:
 
 💡 Not: Eğer döngü sayısı başlangıçta bilinmiyorsa veya koşul her adımda değişiyorsa, o zaman while veya do-while kullanmak daha uygundur.
+
+## Ornek 
+
+```java
+int sum = 0;
+for (int i = 0, j = 0; i < 5 || j < 5; ++i, j = i + 1) {
+   sum += i;
+}
+System.out.println(sum);
+```
+### Aciklama:
+- Başlangıç: int i = 0, j = 0 → i ve j burada başlatılıyor.
+- Koşul: i < 5 || j < 5 → döngü devam etmesi için en az birinin true olması yeterli. (|| mantıksal VEYA)
+- Artırma: ++i, j = i + 1 → döngü sonunda i 1 artırılır, j ise i+1 olur.
+ -----------------------------------------------------------------
+- || operatörü: Sadece biri true olsa döngü devam eder.
+- Artırma kısmı: Döngü sonunda çalışır, blok önce çalışır, sonra artırma ve j güncelleme yapılır.
+- sum sonucu: 10 → yani sadece i’nin değerleri toplandı.
+-----------------------------------------------------
+- Döngü bloğu önce çalışır (sum += i)
+- Ardından ++i ve j = i + 1 çalışır
+- Koşul kontrol edilir, true ise tekrar döngü
+

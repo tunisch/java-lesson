@@ -27,31 +27,47 @@
 
 /* do-while password example */
 
-import java.util.Scanner;
+//import java.util.Scanner;
+//
+//public class DoWhile {
+//    public static void main(String[] args) {
+//
+//        int password;
+//        boolean isPasswordSuccess = true;
+//
+//        Scanner inp = new Scanner(System.in);
+//
+//        do {
+//            System.out.print("Sifrenizi giriniz: "); // ekranda yazmasi gereken text inp den once yazilir.!
+//            password = inp.nextInt(); // ekrana yazdirmayi yarar !!
+//            if (password == 123) {
+//                System.out.println("Dogru");
+//                isPasswordSuccess = false; // bu if statement dogru olursa askPassword false degeri atanir sonra code blogu direkt while gecer
+//                // while ici false olacagi icin while calismaz program sonlanir!! while i calistirmamak icin yaptik!!
+//                System.out.println("Program bitti");
+//            } else {
+//                System.out.println("Yanlis");
+//            }
+//        } while (isPasswordSuccess);
+//    }
+//}
+/* DoWhile - While Farki ?
+ * while döngüsü: koşul doğruysa çalışır
+ * do-while döngüsü: koşul yanlış olsa bile en az 1 kez çalışır
+ */
+
+/* while -> do-while example */
 
 public class DoWhile {
     public static void main(String[] args) {
-
-        int password;
-        boolean isPasswordSuccess = true;
-
-        Scanner inp = new Scanner(System.in);
-
-        do {
-            System.out.print("Sifrenizi giriniz: "); // ekranda yazmasi gereken text inp den once yazilir.!
-            password = inp.nextInt(); // ekrana yazdirmayi yarar !!
-            if (password == 123) {
-                System.out.println("Dogru");
-                isPasswordSuccess= false; // bu if statement dogru olursa askPassword false degeri atanir sonra code blogu direkt while gecer
-                // while ici false olacagi icin while calismaz program sonlanir!! while i calistirmamak icin yaptik!!
-                System.out.println("Program bitti");
-            } else {
-                System.out.println("Yanlis");
-            }
-        } while (isPasswordSuccess);
+        int i = 1, j = 1;
+        while (i < 3) { // i < 3  olana kadar assagidaki kod calisacak !
+            do {
+                System.out.print(j + ","); //print diye yan yana bastiracak!! ve virgul koycak
+                j++; // j bir arttirilacak ama yukardaki while calisirsa
+            } while (j < 4); // while dan cikabilmek icin j = 4 olmali !!
+            i++;
+            System.out.println(i);
+        }
     }
 }
-/* DoWhile - While Farki ?
-* while döngüsü: koşul doğruysa çalışır
-* do-while döngüsü: koşul yanlış olsa bile en az 1 kez çalışır
- */

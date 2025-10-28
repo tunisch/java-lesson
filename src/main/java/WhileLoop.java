@@ -47,11 +47,11 @@ public class WhileLoop {
         Scanner inp = new Scanner(System.in);
 
         while (!isPasswordSuccess) { // while ici (condition) her zaman true olmaliki dongu calisabilsin!!
-            System.out.print("Sifrenizi giriniz: ");
+            System.out.print("Sifrenizi giriniz: "); // Tanimlamayi while icinde yapiyoruz !!
             password = inp.nextInt();
             if (password == 123) {
                 System.out.println("Dogru");
-                isPasswordSuccess = true;
+                isPasswordSuccess = true; //eger true olursa while ici flase olcak ve while dan cikmis olcaz o yuzden sonsuz dongu olmasin diye yaptik!!
             } else {
                 System.out.println("Yanlis");
             }

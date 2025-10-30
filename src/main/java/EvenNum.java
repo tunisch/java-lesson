@@ -19,6 +19,7 @@ public class EvenNum {
 //            }
 //        }
         /* ya da boylede yazilir */
+        // // kullanicin ne kadar deger gireceginib ilmedigimiz icin while tercih ederiz!!
 //        int i = 1;
 //        while (i <= sayi){
 //            if (i % 2 == 0){

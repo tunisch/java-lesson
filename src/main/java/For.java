@@ -56,7 +56,7 @@ public class For {
 //
         /* for un avantajli oldugu durum icin ornek */
         // 1 den  10 a kadar olan sayilari ekrana bastirma (sonunu biliyoruz ) for kullancaz daha performansli !!
-
+        // Bir işi kaç kere yapacağını biliyorsan, yani başlangıç, bitiş ve artış miktarı belliyse → for döngüsü kullanılır.
         for (int i = 1; i <= 10; i++){
             System.out.println(i);
         }

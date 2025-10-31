@@ -55,7 +55,7 @@ public class For {
 //        } while (sayi > 0); // sayi 0 dan buyuk oldugu surece sonsuz dongu olcak kucuk olunca while girilmeyecek.
 //
         /* for un avantajli oldugu durum icin ornek */
-        // 1 den  10 a kadar olan sayilari ekrana bastirma (sonunu biliyoruz ) for kullancaz dah aperformansli !!
+        // 1 den  10 a kadar olan sayilari ekrana bastirma (sonunu biliyoruz ) for kullancaz daha performansli !!
 
         for (int i = 1; i <= 10; i++){
             System.out.println(i);

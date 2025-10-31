@@ -35,7 +35,7 @@
 //}
 
 /* example to Password with While : The user asks the programmer until he enters the correct password */
-
+// Bir şeyi kaç kere yapacağını bilmiyorsan, ama bir koşul sağlandığı sürece devam etsin diyorsan → while kullanılır.
 import java.util.Scanner;
 
 public class WhileLoop {

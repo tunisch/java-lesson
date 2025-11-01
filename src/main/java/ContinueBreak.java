@@ -3,7 +3,7 @@
 
 🔸 Peki break’ten sonra ne olur?
 
-break, bulunduğu döngüyü anında durdurur.
+break, bulunduğu döngüyü anında durdurur. YANI WHILE DAN DO- WHILEDAN FOR DAN CIKMAYA YARAR!!!
 
 Yani for döngüsünün içindeki hiçbir satır artık çalışmaz.
 
@@ -39,6 +39,8 @@ Döngünün dışındaki kodlar kaldığı yerden devam eder.
 
 /* continue kullanimi while ile */
 /* continue kullandığında, değişkeni artırma işlemini i++ continue’dan önce yapman gerekir.   */
+/* DO-WHILE DAN CIKAMAZSIN YA DA FOR DAN */
+
 
 //public class ContinueBreak {
 //    public static void main(String[] args) {

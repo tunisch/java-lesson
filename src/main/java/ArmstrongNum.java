@@ -16,6 +16,38 @@ import java.util.Scanner;
 public class ArmstrongNum {
     public static void main(String[] args) {
 
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Bir sayı giriniz: ");
+        int number = inp.nextInt();
+        int basNumber = 0;
+        int tempNumber = number;
+        int result = 0;
 
+        while (true) {
+
+            while (tempNumber != 0) {
+                tempNumber /= 10;
+                basNumber++; // 407 girersek 3 kere calisacak basamak numb 3 olcak sonra bitecek while assagi gececek
+            }
+//        System.out.println(basNumber);
+            tempNumber = number; // 0 olmustu simdi 407 tekrar yaptik!!
+            while (tempNumber != 0) {
+                int basValue = tempNumber % 10; // 407 nin 10 ile bol kalan 7 value ilk 7 olcak
+                int basPow = 1;
+                for (int i = 1; i <= basNumber; i++) {
+                    basPow *= basValue;
+                }
+                result += basPow;
+                tempNumber /= 10;
+//            System.out.println(tempNumber);
+            }
+            if (result == number) {
+                System.out.println(number + " sayisi bir Armstrong sayidir. ");
+                break; // Armstrong bulundu, döngü biter
+
+            } else {
+                System.out.println(number + " bir Armstrong sayısı değildir, tekrar deneyin.\n");
+            }
+        }
     }
 }

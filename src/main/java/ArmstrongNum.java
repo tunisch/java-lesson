@@ -11,43 +11,74 @@ N haneli bir sayının basamaklarının n’inci üstlerinin toplamı, sayının
 54748=5^5+4^5+7^5+4^5+8^5=3125+1024+16807+1024+32768=54748
  */
 
+//import java.util.Scanner;
+//
+//public class ArmstrongNum {
+//    public static void main(String[] args) {
+//
+//        Scanner inp = new Scanner(System.in);
+//
+//
+//        while (true) {
+//            System.out.print("Bir sayı giriniz: ");
+//            int number = inp.nextInt();
+//            int basNumber = 0;
+//            int result = 0;
+//
+//            int tempNumber = number;
+//            while (tempNumber != 0) {
+//                tempNumber /= 10;
+//                basNumber++; // 407 girersek 3 kere calisacak basamak numb 3 olcak sonra bitecek while assagi gececek
+//            }
+/// /        System.out.println(basNumber);
+//            tempNumber = number; // 0 olmustu simdi 407 tekrar yaptik!!
+//            while (tempNumber != 0) {
+//                int basValue = tempNumber % 10; // 407 nin 10 ile bol kalan 7 value ilk 7 olcak
+//                int basPow = 1;
+//                System.out.println(basValue);
+//                for (int i = 1; i <= basNumber; i++) {
+//                    basPow *= basValue;
+//                }
+//                result += basPow;
+//                tempNumber /= 10;
+/// /            System.out.println(tempNumber);
+//            }
+//            if (result == number) {
+//                System.out.println(number + " sayisi bir Armstrong sayidir. ");
+//                break; // Armstrong bulundu, döngü biter
+//
+//            } else {
+//                System.out.println(number + " bir Armstrong sayısı değildir, tekrar deneyin.\n");
+//            }
+//        }
+//        inp.close();
+//    }
+//}
+
+/* Bir sayının basamak sayılarının toplamını hesaplayan program yazınız.
+Örnek : 1643 = 1 + 6 + 4 + 3 = 14
+*/
+
 import java.util.Scanner;
 
 public class ArmstrongNum {
     public static void main(String[] args) {
 
         Scanner inp = new Scanner(System.in);
+
         System.out.print("Bir sayı giriniz: ");
         int number = inp.nextInt();
-        int basNumber = 0;
-        int tempNumber = number;
         int result = 0;
 
-        while (true) {
+        while (number != 0) {
 
-            while (tempNumber != 0) {
-                tempNumber /= 10;
-                basNumber++; // 407 girersek 3 kere calisacak basamak numb 3 olcak sonra bitecek while assagi gececek
-            }
-//        System.out.println(basNumber);
-            tempNumber = number; // 0 olmustu simdi 407 tekrar yaptik!!
-            while (tempNumber != 0) {
-                int basValue = tempNumber % 10; // 407 nin 10 ile bol kalan 7 value ilk 7 olcak
-                int basPow = 1;
-                for (int i = 1; i <= basNumber; i++) {
-                    basPow *= basValue;
-                }
-                result += basPow;
-                tempNumber /= 10;
-//            System.out.println(tempNumber);
-            }
-            if (result == number) {
-                System.out.println(number + " sayisi bir Armstrong sayidir. ");
-                break; // Armstrong bulundu, döngü biter
-
-            } else {
-                System.out.println(number + " bir Armstrong sayısı değildir, tekrar deneyin.\n");
-            }
+            int basValue = number % 10; // 407 nin 10 ile bol kalan 7 value ilk 7 olcak
+            System.out.println(basValue); //debug code line
+            number /= 10;
+            result += basValue;
         }
+        System.out.println(result);
+        inp.close();
     }
 }
+

@@ -18,3 +18,8 @@ public class HarmonicNum {
         System.out.println(sum);
     }
 }
+
+
+
+
+

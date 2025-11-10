@@ -83,6 +83,129 @@ public class JavaPatika {
     }
 }
 ```
+## More Examples:
+### 📘 Kod ve Açıklama:
+```java
+public class PatikaDev {
+    public static void main(String[] args) {
+        int x = 25;                    // x burada 25 olarak tanımlandı (ama sadece main içinde geçerli)
+        System.out.println(run(5));    // run metoduna 5 gönderiliyor
+    }
+
+    static int run(int x) {
+        x = 10;                        // burada parametre olarak gelen 5 değeri 10’a çevriliyor
+        return x;                      // metot 10 değerini geri döndürüyor
+    }
+}
+```
+### 🧠 Nasıl Çalışıyor?
+
+- main() içinde x = 25 tanımlanıyor ama bu main’e özel bir değişken.
+- run(5) çağrıldığında run metoduna ayrı bir x parametresi geliyor.
+- O parametreye 5 değeri atanıyor, ama sonra x = 10; satırıyla bu 5 → 10 oluyor.
+- return x; ifadesi, metot bittiğinde 10 değerini geri gönderiyor.
+- ystem.out.println(run(5)); bu dönen değeri yazdırıyor.
+
+💡 Çıktı:
+```java
+10
+```
+- Yani burada return, metot bitmeden elde ettiğin sonucu dışarıya göndermeni sağlar.
+System.out.println() da o sonucu ekrana yazdırır.
+### 🔄 Örnek 1: Basit Toplama:
+```java
+public class ReturnExample1 {
+    public static void main(String[] args) {
+        int result = sum(3, 7);          // sum metoduna 3 ve 7 gönderiliyor
+        System.out.println(result);      // return değeri ekrana yazdırılıyor
+    }
+
+    static int sum(int a, int b) {
+        return a + b;                    // toplama sonucu dışarı gönderiliyor
+    }
+}
+```
+Çıktı:
+```java
+10
+```
+Burada return → a + b işleminin sonucunu geri verir.
+
+### 🔄 Örnek 2: Void (geri dönüşsüz metot)
+```java
+public class VoidExample {
+    public static void main(String[] args) {
+        sayHello();   // bu metot sadece bir şey YAZAR ama geri döndürmez
+    }
+
+    static void sayHello() {
+        System.out.println("Hello from void method!");
+    }
+}
+```
+Çıktı:
+```java
+Hello from void method!
+```
+- Burada return yok çünkü metot sadece ekrana yazı yazıyor.
+Void = “boş”, yani “geri dönüş değeri yok”.
+### 🔄 Örnek 3: Return ile işlem sonucu kullanma
+```java
+public class ReturnExample2 {
+    public static void main(String[] args) {
+        int doubled = multiplyByTwo(6);
+        System.out.println("Sonuç: " + doubled);
+    }
+
+    static int multiplyByTwo(int number) {
+        int result = number * 2;
+        return result;
+    }
+}
+```
+Çıktı:
+```java
+Sonuç: 12
+```
+- Burada multiplyByTwo(6) çağrıldığında return ile 12 döndürülüyor,
+System.out.println() da bunu bastırıyor.
+### 🔁 Örnek 4: Geri dönen değeri başka işlemde kullanmak:
+```java
+public class ReturnExample3 {
+    public static void main(String[] args) {
+        int a = 4;
+        int b = 6;
+        int total = sum(a, b);              // 10 döner
+        int doubledTotal = total * 2;       // sonucu 2 ile çarptık
+        System.out.println(doubledTotal);   // 20 yazdırılır
+    }
+
+    static int sum(int x, int y) {
+        return x + y;                       // x + y sonucunu döndürür
+    }
+}
+```
+Çıktı:
+```java
+20
+```
+Bu örnekte return, sadece sonucu göndermekle kalmıyor, o sonucu başka bir işlemde tekrar kullanabiliyoruz.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 💡 Ekstra Detay: Metot Aşırı Yüklenmesi (Method Overloading)
 İlerleyen aşamalarda göreceğiniz bu kavram, aynı isimde fakat farklı parametre sayıları veya tipleri olan birden fazla metot yazabilmenizi sağlar.

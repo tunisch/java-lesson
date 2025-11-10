@@ -54,9 +54,9 @@ public void selamVer(String isim) {
 Tanımladığınız bir metodu kullanmak için, erişilebilir olduğu bir yerden ismini ve ardından parantezleri () yazarak çağırırsınız. Eğer parametre alıyorsa, parantez içine istenen tipte değerler (argümanlar) yazılmalıdır.
 
 ## ⚠️ Önemli Not (Java 101 için): 
-- main metodundan normal bir metodu çağırmak için, çağırdığınız metodun başına static anahtar kelimesini eklemeniz gerekir.
+- main metodundan normal bir metodu çağırmak için, çağırdığınız metodun başına static anahtar kelimesini eklemeniz gerekir.⚠️
 - metotlar siniflar icerisine yazilir. ✅
-- metot icine metot yazilmaz (⚠️ class icine yazilir) ❌
+- metot icine metot yazilmaz ❌ (⚠️ class icine yazilir✅)
 
 
 ### Örnek Metot Çağırma:

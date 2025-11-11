@@ -4,6 +4,8 @@ Java'da **Metotlar** (ya da diğer adıyla **Fonksiyonlar**), sadece çağrıld�
 
 Metotlar, tıpkı matematikteki fonksiyonlar gibi, dışarıdan veri alabilir (bunlara **parametre** denir), bir işlem yapar ve isteğe bağlı olarak bir sonuç **geri döndürür**.
 
+****⚠️ Program main metottan okumaya baslar!!***
+
 ---
 
 ## 🤔 Neden Metot Kullanırız?
@@ -50,14 +52,13 @@ public void selamVer(String isim) {
   System.out.println("Merhaba, " + isim + "!");
 }
 ```
-## 📞 Metot Çağırma
+## 📞 Metot Çağırma (Return)
 Tanımladığınız bir metodu kullanmak için, erişilebilir olduğu bir yerden ismini ve ardından parantezleri () yazarak çağırırsınız. Eğer parametre alıyorsa, parantez içine istenen tipte değerler (argümanlar) yazılmalıdır.
 
 ## ⚠️ Önemli Not (Java 101 için): 
 - main metodundan normal bir metodu çağırmak için, çağırdığınız metodun başına static anahtar kelimesini eklemeniz gerekir.⚠️
 - metotlar siniflar icerisine yazilir. ✅
 - metot icine metot yazilmaz ❌ (⚠️ class icine yazilir✅)
-
 
 ### Örnek Metot Çağırma:
 ```java

@@ -35,3 +35,38 @@ public class Main {
 // Çıktısı "7"
 
 ```
+
+## Examples:
+```java
+public class PatikaDev {
+    static void show()
+    {
+        System.out.println("Show metodu..");
+        return;
+    }
+    public static void main(String[] args)
+    {
+        show();
+    }
+}
+```
+- Void metotlar bir değer döndürmez, yani return deyiminden sonra herhangi bir değer yazılamaz.
+Ama sadece return; yazmak yasak değil.
+
+### Yani:
+
+return 5; → ❌ Derleme hatası (çünkü void metot değer döndüremez)
+
+return; → ✅ Geçerli (sadece metodu erken bitirir) 
+
+#### OUTPUT : 
+```java
+Show metodu..
+```
+*Yani return; burada sadece “tamam, bu metodun işi bitti, çıkıyorum” anlamına geliyor.
+Hiç yazmasan da olurdu, çünkü metot zaten en sonunda otomatik olarak biterdi.*
+
+#### Özetle:
+- Void metotlar değer döndüremez, ama return; ifadesiyle erken çıkış yapılabilir.
+
+

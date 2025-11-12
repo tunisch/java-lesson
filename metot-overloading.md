@@ -1,5 +1,41 @@
 # Metotlarda Overloading (Aşırı Yüklenme)
 
+## 🧠 Metot Overloading Mantığı
+
+-  Java’da metot overloading, aynı isimli metotların farklı parametre listeleriyle tanımlanmasıdır.
+-  Bu sayede aynı işlevi farklı tür veya sayıda veriyle yapabiliriz.
+⚠️ Ancak yalnızca return tipi değişikliği overloading sayılmaz.
+### 🧩 Örnek Kod
+```java
+public class PatikaDev {
+
+    // 1️⃣ int parametre alan versiyon
+    static int info(int x) {
+        System.out.println("Patika");
+        return 0;
+    }
+
+    // 2️⃣ parametresiz versiyon (void)
+    static void info() {
+        System.out.println("Dev");
+    }
+
+    public static void main(String[] args) {
+        info();     // 2️⃣ numaralı metot çalışır
+        info(5);    // 1️⃣ numaralı metot çalışır
+    }
+}
+```
+### 🧾 Program Çıktısı
+```java
+Dev
+Patika
+```
+### 💬 Açıklama:
+- info() → parametre almadığı için void versiyonu çağrılır.
+- info(5) → int parametre aldığı için int versiyonu çağrılır.
+- Overloading farkı sadece parametre listesinden anlaşılır; dönüş tipi farkı (örneğin int vs void) tek başına geçerli değildir.
+
 - Java'da, iki veya daha fazla metot, parametreler açısından farklılık gösteriyorsa (farklı sayıda parametre, farklı türde parametre veya her ikisi) aynı isime sahip olabilir. Bu duruma metotlarda "Overloading" yani aşırı yüklenme işlemi denir.
 
 - Buradaki amaç aynı işlemi farklı parametrelerle yapacak olan metot ismini tek seferde kullanmaktır. Overloading işlemi "Nesne Yönelimli Programlamada" da çok kullanılmaktadır.

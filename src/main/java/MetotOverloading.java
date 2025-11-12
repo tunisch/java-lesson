@@ -21,5 +21,29 @@ public class MetotOverloading {
         sum(5, 10);
 //        sum(10, 5); sirasi farkli olsada calismaz hata verir!
     }
-
 }
+
+
+    /* metot - overloafing derleme hatasi exampl */
+
+//    public class MetotOverloading {
+//        static int info() {
+//            System.out.println("Patika");
+//            return 0;
+//        }
+//
+//        static void info() {
+//            System.out.println("Dev");
+//        }
+//
+//        public static void main(String[] args) {
+//            info();
+//        }
+//    }
+//}
+
+/* Çünkü overloading’de Java metotları parametre listesine göre ayırır.
+Ama senin iki info() metodunun parametre listesi tamamen aynı: ()
+static int info() → parametre yok
+static void info() → parametre yok
+ */

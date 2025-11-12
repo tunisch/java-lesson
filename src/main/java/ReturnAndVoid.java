@@ -1,4 +1,6 @@
-/* Result metodu */
+/* Return metodu */
+
+/* geri dondurmeye yarar ya da metottan donguduyu bitirmeye yarar! */
 
 //public class ReturnAndVoid {
 //    static int sum(int a, int b) {

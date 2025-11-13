@@ -1,4 +1,6 @@
 /* Makine code u okumaya once mainden baslar */
+/* Java’da metodlara gönderilen parametreler “kopya” olarak gider ve parametreler local değişkendir. */
+
 
 //public class LocalMetot {
 //    public static void main(String[] args) {

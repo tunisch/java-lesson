@@ -1,4 +1,4 @@
-//public class MainClass {
+//public class MainClassCarSystem {
 //    public static void main(String[] args) {
 //        Car audi = new Car("Audi A3", 10,"blue"); // Nesneler new ile olusturulur Car sinifindan audi nesnesi olusturduk
 
@@ -28,7 +28,7 @@
 
 /* Daha temiz clean code hali */
 
-public class MainClass {
+public class MainClassCarSystem {
     public static void main(String[] args) {
         Car audi = new Car("Audi A3", 10, "blue"); // Nesneler new ile olusturulur Car sinifindan audi nesnesi olusturduk
         audi.printInfo();

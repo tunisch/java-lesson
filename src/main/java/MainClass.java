@@ -1,7 +1,8 @@
 //public class MainClass {
 //    public static void main(String[] args) {
 //        Car audi = new Car("Audi A3", 10,"blue"); // Nesneler new ile olusturulur Car sinifindan audi nesnesi olusturduk
-////        audi.model = "Audi A3"; // nokta ile Car sinifin niteliklerine erismis oluyor audi nesnesi ile/
+
+/// /        audi.model = "Audi A3"; // nokta ile Car sinifin niteliklerine erismis oluyor audi nesnesi ile/
 //        audi.type = "Sports"; // boyle yaparsak class icindeki constructor da tanimlanan nitelik nesne de farklilastigi icin en son nesnedeki kabule dilmis olur !!
 //        audi.speed = 10; // artik Car constractor icinde tanimlariz daha guzel gozukur
 //        audi.increaseSpeed(20);
@@ -25,15 +26,17 @@
 //        System.out.println(mercedes.model + " Hizi : " + mercedes.speed);
 //
 
-        /* Daha temiz clean code hali */
+/* Daha temiz clean code hali */
 
-        public class MainClass {
-            public static void main(String[] args) {
-                Car audi = new Car("Audi A3", 10,"blue"); // Nesneler new ile olusturulur Car sinifindan audi nesnesi olusturduk
-                audi.printInfo();
+public class MainClass {
+    public static void main(String[] args) {
+        Car audi = new Car("Audi A3", 10, "blue"); // Nesneler new ile olusturulur Car sinifindan audi nesnesi olusturduk
+        audi.printInfo();
 
 
         Car bmw = new Car(); // Car sinifindan bmw adinda yeni bir Car uret demis oluyoruz
+
+        // Sinifa ait davranislara erismek icin olusturualn nesnenin sonuna (.) konulur!
         bmw.increaseSpeed(20);
         bmw.increaseSpeed(25);
         bmw.increaseSpeed(60);

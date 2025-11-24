@@ -105,4 +105,25 @@ Speed : 30
 Speed : 15
 Speed : 20
 ```
+# Sinif metotlarinda (davranislarinda ) 
+## Davranışın parametre alıp almaması
+- Java’da bir metoda parametre verip vermemek tamamen metodun tanımına bağlıdır.
+    - a) Parametre alan metod
+      ```java
+      void addTeacher(Teacher teacher) { // metod parametre istiyor
+      this.teacher = teacher;
+      }
+      ```
+        - Burada metod Teacher türünde bir nesne bekliyor.
+        - Çağırırken parametre vermeliyiz
+    ```java
+    tarih.addTeacher(t1); // t1 burada parametre
+    ```
+    - Eğer parametre vermezsek → hata alırız, çünkü metodun tanımı parametre istiyor.
+      
+  
+  
+          
+  
+
 

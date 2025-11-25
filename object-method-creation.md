@@ -121,9 +121,28 @@ Speed : 20
     ```
     - Eğer parametre vermezsek → hata alırız, çünkü metodun tanımı parametre istiyor.
       
-  
-  
+    - b) Parametre almayan metod
+      ```java
+         void printInfo() { // metod parametre istemiyor
+        System.out.println(this.model);
+        }
+      ```
+        - Bu metodun içinde gerekli tüm bilgi zaten nesnenin kendi niteliklerinde var.
+        - Çağırırken parametre vermeye gerek yok:
+    ```java
+    audi.printInfo(); // parantez boş çünkü metod parametre istemiyor
+    ```
+## 2️⃣ Formül şeklinde özet
+      
+  | Nesne        | Metod      | Parametre       | Çağrı                 | Neden?                                                         |
+| ------------ | ---------- | --------------- | --------------------- | -------------------------------------------------------------- |
+| Course tarih | addTeacher | Teacher nesnesi | tarih.addTeacher(t1); | Metod parametre istiyor, t1’i Course nesnesine bağlamak için   |
+| Car audi     | printInfo  | Yok             | audi.printInfo();     | Metod parametre istemiyor, gerekli tüm bilgi zaten nesnede var |
+
           
-  
+  - Yani özetle:
+
+    - Parametre isteyen metod → çağırırken parametre verirsin
+    - Parametre istemeyen metod → çağırırken parantez boş bırakılır
 
 

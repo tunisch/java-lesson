@@ -16,11 +16,11 @@
 
 - Dizinin hafızada bir başlangıç adresi olur ve ardışık olan diğer elemanlar sırayla hafızaya yerleştirilir. Diziler "new" anahtar sözcüğüyle oluşturulur. Böylece, Heap Hafıza bölgesinde yer kaplarlar.
 
-  ```java
-  double[] myList;   // tercih edilen yol
-
+```java
+double[] myList;   // tercih edilen yol
+```
 veya 
-
+```java
 double myList[];   // başka türlü tanımlama biçimi
 ```
 - Diziler veri tipi ve [] parantezler ile belirtilir. Yukarıda iki farklı tanımı görülmektedir. Hafızadan yer alıp diziye alan ayırabilmek için "new" anahtar kelimesi kullanılır.

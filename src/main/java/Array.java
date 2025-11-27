@@ -25,7 +25,7 @@ public class Array {
         return reverse;
     }
 
-
+// Sadece boyutu verilerek tanimlanan Arraylar
     public static void main(String[] args) {
         // Array new ile olusturulur bouytunu vermemi gerekir
         int[] list = new int[10]; // 10 bouytlu bir dizi
@@ -39,7 +39,7 @@ public class Array {
         list[2] = 30;
 
         System.out.println(list[2]);
-
+        // Varasayilan Arraylar boyle tanimlanir aslinda sabitti bilinir icerigi ve boyutu
         int[] list2 = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
         double[] list3 = {10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0};
         System.out.println(list2[1]); // index numarasini basar

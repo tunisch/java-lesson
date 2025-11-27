@@ -15,7 +15,19 @@
 - Dizi indisleri her zaman 0'dan başlar o yüzden dizinin son elemanının değeri, dizi boyutuna eşit değildir ve bu dikkat edilmesi gereken bir konudur.
 
 - Dizinin hafızada bir başlangıç adresi olur ve ardışık olan diğer elemanlar sırayla hafızaya yerleştirilir. Diziler "new" anahtar sözcüğüyle oluşturulur. Böylece, Heap Hafıza bölgesinde yer kaplarlar.
-
+  
+- Dizinin genel formülü zihinde şöyle durabilir:
+```java
+“Tip + [] + isim = {elemanlar}”
+```
+- Ya da elemanları sonra vereceksen:
+```java
+“Tip + [] + isim = new Tip[boyut]”
+```
+- Daha sonra:
+```java
+“isim[index] = değer”
+```
 ```java
 double[] myList;   // tercih edilen yol
 ```

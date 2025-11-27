@@ -71,14 +71,14 @@ printArray(list);
 ```
 - Çünkü burada list dizisini fonksiyona gönderiyorsun. Java diyor ki:
 
-“Ben sana bu dizinin referansının bir kopyasını veriyorum.”
+- “Ben sana bu dizinin referansının bir kopyasını veriyorum.”
 
-Fiziksel dizinin kendisi kopyalanmaz; sadece diziyi gösteren adresin bir kopyası gider. İşte bunun adı “Pass by Value”.
+- Fiziksel dizinin kendisi kopyalanmaz; sadece diziyi gösteren adresin bir kopyası gider. İşte bunun adı “Pass by Value”.
 
-Kısacası:
-• Değişken = referans
-• Fonksiyona giderken = referansın kopyası gider
-• Ama iki taraf da aynı gerçek diziyi gösterir
+- Kısacası:
+	-  Değişken = referans
+	-  Fonksiyona giderken = referansın kopyası gider
+	-  Ama iki taraf da aynı gerçek diziyi gösterir
 
 Bu yüzden fonksiyon diziyi değiştirirse, asıl dizin de değişmiş olur.
 

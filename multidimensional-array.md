@@ -31,9 +31,9 @@ int[][] uzaklik ={
 
 - Bir değişkenin dizi olduğunu köşeli parantezler ile belirtmiştik. Bir tane köşeli parantez tek boyutlu dizi belirtir. Eğer çok boyutlu dizi oluşturmak istiyorsak, boyut sayısı kadar köşeli parantez belirtmeliyiz. Örneğin aşağıdaki satır 2 boyutlu bir dizi (yani matris) belirtir:
 
-- ```java
-  degiskenTipi[][] arrayIsmi;
-int matrix[][];
+- degiskenTipi[][] arrayIsmi;
+```java
+	int matrix[][];
 ```
 yada
 

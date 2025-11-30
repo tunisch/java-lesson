@@ -1,7 +1,18 @@
+import java.util.Arrays;
+
 public class MultidimensionalArray {
     public static void main(String[] args) {
         // matrisi tanimladiigimiz durumdur !
-        int[][] matris = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+        /*
+        Bu aslında 4 adet tek boyutlu diziden (satırdan) oluşan bir dizidir.
+        Yani, her bir elemanı bir dizi olan bir dizidir
+         */
+        int[][] matris = {
+                {1, 2, 3},   // matris[0] elemanı -> bir dizidir -> {1, 2, 3}
+                {4, 5, 6},   // matris[1]
+                {7, 8, 9},   // matris[2]
+                {10, 11, 12} // matris[3]
+        };
 
         for (int i = 0; i < matris.length; i++) {
             for (int j = 0; j < matris[i].length; j++) { // matris[0] = matris [i] row u temsil eder 0 ilk rowdur !
@@ -40,6 +51,8 @@ public class MultidimensionalArray {
         numbers[0][0] = 10;
         numbers[0][1] = 20;
         System.out.println(numbers[0][1]);
+        // Matristeki  satiri yazdirmaya yarar Arrays.toString() methodu
+        System.out.println(Arrays.toString(numbers[0]));
     }
 }
 

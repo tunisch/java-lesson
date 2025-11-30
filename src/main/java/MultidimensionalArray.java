@@ -20,6 +20,26 @@ public class MultidimensionalArray {
             }
             System.out.println();
         }
+        // diziyi terse cevirme
+        System.out.println("--------------");
+        int[][] array = {{1, 2}, {3, 4}, {5, 6}};
+        for (int i = array.length - 1; i >= 0; i--) {
+            for (int j = array[i].length - 1; j >= 0; j--) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+        // DERLEME HATASI VERIR
+        int[][] numbers;
+        numbers = new int[3][];
+        // numbers[0] = {1,2}; BU YANLIS !
+        // 1. SATIRA (numbers[0]) 2 elemanlı bir DİZİ atıyoruz
+        numbers[0] = new int[2];
+
+        // 2. Dizi elemanlarına tek tek değer atıyoruz
+        numbers[0][0] = 10;
+        numbers[0][1] = 20;
+        System.out.println(numbers[0][1]);
     }
 }
 

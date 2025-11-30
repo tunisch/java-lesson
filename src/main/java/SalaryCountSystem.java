@@ -1,4 +1,4 @@
-public class SalaryCount {
+public class SalaryCountSystem {
     public static void main(String[] args) {
     Employee e1 = new Employee("kemal",2000,45,1985);
         System.out.println(e1); // ile nesneyi direkt yazdırabilirsin, ayrıca ekstra print çağrısına gerek kalmaz.

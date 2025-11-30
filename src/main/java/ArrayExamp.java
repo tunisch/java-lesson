@@ -1,6 +1,7 @@
 /* Matris boyutunu sizin belirlediğiniz
 matris değerlerini ise kullanıcının girdiği bir algoritma yazınız.
  */
+// kullanicidan array degeri alma example
 import java.util.Scanner;
 
 public class ArrayExamp {

@@ -3,7 +3,7 @@
 matris değerlerine 0-99 arası random sayılar üreterek matrise atama yapınız
 iki basamklilar ayri tek basamaklilar ayri olcak sekilde ekran yazdirma
  */
-
+// Random sayi uretme Math.random() * 100
 import java.util.Scanner;
 
 public class ArrayExamp2 {
@@ -22,7 +22,7 @@ public class ArrayExamp2 {
 
         // 2. Matrisin türünü belirle
         // İlk sayı üretilecek, tek mi iki mi ona bakacağız
-        int firstNum = (int) (Math.random() * 100); // 0-99 arası sayı
+        int firstNum = (int) (Math.random() * 100); // 0-99 arası radom sayi ureten func
         boolean isTwoDigit;
 
         if (firstNum >= 10) {

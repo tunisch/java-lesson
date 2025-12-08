@@ -1,0 +1,2 @@
+public class ArraysClassAndMethodsExamp1 {
+}

@@ -6,7 +6,7 @@ import java.util.Arrays; // HelperArray.java file ile yapilan islemleri bu libar
 /* Eger bir metodun basina static yazarsak main metodu icinde kullanabiliyorduk ve ayrica yeniden nesne olusturmadan kullanadabiliyoruz
        " HelperArray helper = new HelperArray(); " buna gerek kalmadan -> HelperArray.print(list); diyerek artik boyle cagirabiliriz !!!
 */
-public class MainClass {
+public class MainClassArraysClassAndMethods {
     public static void main(String[] args) {
 
         int[] list = {1, 2, 3, 4};

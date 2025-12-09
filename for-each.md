@@ -4,7 +4,7 @@
 - Genelde dizilerdeki ve listelerdeki elemanları daha hızlı şekilde ulaşmak için kullanılan kısa bir yöntemdir. Kısacası for döngüsünün modifiye edilmiş halidir.
 
 ```java
-for (veritipi degisken: diziAdi) {
+for (veritipi degisken(⚠ **Elemani temsil eden harf** ⚠) : diziAdi) {
   // kod bloğu
 }
 for (ElemanTipi geçici_değişken_adı : Dizi_veya_Koleksiyon_Adı) {
@@ -16,7 +16,7 @@ for (ElemanTipi geçici_değişken_adı : Dizi_veya_Koleksiyon_Adı) {
 
 ```java
 String[] arabalar = {"BMW", "Mercedes", "Ford", "Ferrari"};
-for (String i : arabalar) { // i burada dizinin elemanlarini temsile der index i degil ⚠️⚠️⚠️
+for (String i : arabalar) { // i burada dizinin elemanlarini temsil eder index'i degil ⚠️⚠️⚠️
   System.out.println(i);
 }
 

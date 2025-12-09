@@ -16,7 +16,7 @@ for (ElemanTipi geçici_değişken_adı : Dizi_veya_Koleksiyon_Adı) {
 
 ```java
 String[] arabalar = {"BMW", "Mercedes", "Ford", "Ferrari"};
-for (String i : arabalar) {
+for (String i : arabalar) { // i burada dizinin elemanlarini temsile der index i degil ⚠️⚠️⚠️
   System.out.println(i);
 }
 

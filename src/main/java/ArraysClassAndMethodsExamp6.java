@@ -1,3 +1,4 @@
+/* Ekrana P harfi yazdirma */
 public class ArraysClassAndMethodsExamp6 {
     public static void main(String[] args) {
         String[][] arr = new String[5][3];

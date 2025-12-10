@@ -27,8 +27,7 @@ for (String i : arabalar) { // i burada dizinin elemanlarini temsil eder index'i
 // Ferrari
 ```
 
-- Çok boyutlu dizilerde forEach kullanımı
-
+- Çok boyutlu dizilerde forEach kullanımı      
 ```java
 public class Main {public static void main(String[] args) {
         int[][] matris = {
@@ -38,9 +37,9 @@ public class Main {public static void main(String[] args) {
                 {10, 11, 12}
         };
 
-         for (int[] row : matris) {
-            for (int col : row) {
-                System.out.print(col + " ");
+         for (int[] array : matris) {   //  matrisin elemanları: int[]diziler
+            for (int value : array) {     // array'in elemanları(value): int sayılar
+                System.out.print(value + " ");
             }
             System.out.println();
         }

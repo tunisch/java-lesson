@@ -1,3 +1,5 @@
+/* Ekrana B harfi yazdirma */
+
 public class ArraysClassAndMethodsExamp5 {
     public static void main(String[] args) {
         String[][] arr = new String[6][4];

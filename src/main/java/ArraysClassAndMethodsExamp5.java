@@ -1,4 +1,4 @@
-/* Ekrana B harfi yazdirma */
+/* Pratik - Çok Boyutlu Dizilerde yildizlar ile B Harfi Yazdıran Program */
 
 public class ArraysClassAndMethodsExamp5 {
     public static void main(String[] args) {

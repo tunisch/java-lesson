@@ -18,6 +18,12 @@ public class ArraysClassAndMethodExamp3 {
             System.out.print(i + ".nci elemani giriniz: ");
             arr[i - 1] = inp.nextInt();
         }
+        //ya Arrays kullanmadan boyle yazdircaz !
+        for (int i = 0; i < x; i++) {
+            System.out.println(arr[i]);
+        }
+        System.out.println();
+        // ya da Arrays methodu kullanarak boyle yazdiririz!
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
     }

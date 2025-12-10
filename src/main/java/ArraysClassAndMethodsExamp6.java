@@ -1,4 +1,4 @@
-/* Ekrana P harfi yazdirma */
+/* Pratik - Çok Boyutlu Dizilerde yildizlar ile P Harfi Yazdıran Program */
 public class ArraysClassAndMethodsExamp6 {
     public static void main(String[] args) {
         String[][] arr = new String[5][3];

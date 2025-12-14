@@ -102,26 +102,26 @@ public class StringClassAndMethods {
         System.out.println("Does str match 'Patika.dev'? " + str.matches("Patika.dev"));
         System.out.println("Does str match 'patika.dev'? " + str.matches("patika.dev"));
 
-        // offsetByCodePoints() method
+        // offsetByCodePoints() method belirtilen dizinden baslayarak, belirtilen sayida kod noktasina kaydirir ve yeni bir dizin dondurur.
         System.out.println("Offset by code points from index 0: " + str.offsetByCodePoints(0, 10));
 
-        // regionMatches() method
+        // regionMatches() method iki dizenin belirli bir bolumunun eslesip eslesmedigini kontrol eder.
         System.out.println("Region matches from index 0 to 3 " + str.regionMatches(true, 0, str2, 0, 3));
 
-        // repeat() method
+        // repeat() method bir dizgeyi belirtilen sayida tekrarlar.
         System.out.println("Repeated str: " + str.repeat(3));
 
-        // replace() method
+        // replace() method bir dizgede belirtilen karakterlerin tum olusumlarini degistirir.
         System.out.println("Replaced 'a' with 'e': " + str.replace('a', 'e'));
         System.out.println("Replaced 'dev' with 'org': " + str.replace("dev", "org"));
 
-        // replaceAll() method
+        // replaceAll() method bir dizgede belirtilen karakterlerin tum olusumlarini degistirir.
         System.out.println("Replaced all 'a' with 'e': " + str.replaceAll("a", "e"));
 
-        // replaceFirst() method
+        // replaceFirst() method bir dizgede belirtilen karakterlerin ilk olusumunu degistirir.
         System.out.println("Replaced first 'a' with 'e': " + str.replaceFirst("a", "e"));
 
-        // reverse() method
+        // reverse() method bir diziyi tersine cevirir.
         System.out.println("Reversed str: " + new StringBuilder(str).reverse());
 
         // split() method bir dizeyi bir alt dizeye boler.
@@ -136,17 +136,17 @@ public class StringClassAndMethods {
         // startsWith() method bir dizenin belirtilen karakter ile baslayip baslamadigini kontrol eder.
         System.out.println("Does str start with 'Pat'? " + str.startsWith("Pat"));
 
-        // substring() method
+        // substring() method bir dizenin belirli bir bolumunu döndurur.
         System.out.println("Substring from index 4: " + str.substring(4));
         System.out.println("Substring from index 0 to 6: " + str.substring(0, 6));
 
-        // strip() method
+        // strip() method bir dizenin basindaki ve sonundaki bosluklari kaldirir.
         System.out.println("Stripped str4: '" + str4.strip() + "'");
 
-        // stripLeading() method
+        // stripLeading() method bir dizenin basindaki bosluklari kaldirir.
         System.out.println("Stripped leading spaces from str4: '" + str4.stripLeading() + "'");
 
-        // stripTrailing() method
+        // stripTrailing() method bir dizenin sonundaki bosluklari kaldirir.
         System.out.println("Stripped trailing spaces from str4: '" + str4.stripTrailing() + "'");
 
         // toCharArray() method bir dizeyi yeni bir karakter dizisine donusturur.
@@ -168,10 +168,10 @@ public class StringClassAndMethods {
         // toUpperCase() method bir dizeyi buyuk harflere donusturur.
         System.out.println("Uppercase str3: " + str3.toUpperCase());
 
-        // trim() method
+        // trim() method bir dizenin basindaki ve sonundaki bosluklari kaldirir.
         System.out.println("Trimmed str4: '" + str4.trim() + "'");
 
-        // valueOf() method
+        // valueOf() method bir degiskenin degerini String olarak dondurur.
         int num = 123;
         String numStr = String.valueOf(num);
         System.out.println("Value of int num as String: " + numStr);

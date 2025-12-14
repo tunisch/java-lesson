@@ -22,7 +22,7 @@ public class ArrayExamp2 {
 
         // 2. Matrisin türünü belirle
         // İlk sayı üretilecek, tek mi iki mi ona bakacağız
-        int firstNum = (int) (Math.random() * 100); // 0-99 arası radom sayi ureten func
+        int firstNum = (int) (Math.random() * 100); // 0-99 arası radom sayi ureten func normalde double dir basina (int) getirisek tam sayi uretir!!!
         boolean isTwoDigit;
 
         if (firstNum >= 10) {

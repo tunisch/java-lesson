@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -20,37 +21,45 @@ public class NumberGuessingGame {
         Scanner inp = new Scanner(System.in);
         int hak = 5;
         int[] wrong = new int[hak]; // yanlislarin girildigi bir dizi olusturduk!
+        boolean isWrongSit = false;
 
-        for (int i = 1; i <= hak; i++) {
-            System.out.print("Tahmininizi girin (" + (hak - i + 1) + " hak kaldı): ");
+        for (int i = 0; i < hak; i++) {
+            System.out.print("Bir tahmin sayisi giriniz : ");
             int tahmin = inp.nextInt();
-            if (0 > tahmin || tahmin > 99) {
-                System.out.println("Lutfen 0-100 arasinda bir deger giriniz ! ");
-                break; //oyunu bitirir (basa donmeyiz) assagi calismaz !, direkt donguden cikar
-            }
-            if (tahmin == number_2) {
-
-                System.out.println("Tebrikler! Doğru tahmin 🎉");
+            System.out.println("Kalan Hakkiniz : " + (hak - 1 - i));
+            if (i == 4){
+                System.out.println("Hakkiniz bitmistir !");
                 break;
+            }
+            System.out.println("Hatalı bir sayı girdiniz !");
+            if (tahmin > number_2) {
+                System.out.println("Daha küçük bir sayı giriniz.");
+
             } else {
-                for(int j = 0; j < i; j++) { // j = 0'dan başlıyoruz çünkü diziler sıfırdan başlar.
-                    if (tahmin == wrong[j]) { // // Eğer tahmin daha önce girilen tahminle eşitse:
-                        System.out.println("Ayni sayiyi girdiniz !" + wrong[j]);
-                        break; // Aynı sayıyı girdiyse, döngüyü sonlandırıyoruz.
+                System.out.println("Daha buyuk bir sayi giriniz.");
+            }
+            if (!isWrongSit) {
+                if (0 > tahmin || tahmin > 99) {
+                    System.out.println("Lutfen 0-100 arasinda bir deger giriniz ! ");
+                    System.out.println("Kalan Hakkiniz : " + (hak + 1 - i));
+                }
+                for (int k = 0; k < hak; k++) {
+                    if (wrong[k] == tahmin) {
+                        System.out.println("Ayni sayiyi 2 kere yazdiniz !!");
+                        System.out.println("Kalan Hakkiniz : " + (hak + 1 - i));
                     }
                 }
-                if (i == hak) {
-                    System.out.println("Hakkiniz bitmistir ! ");
+                if (tahmin == number_2) {
+                    System.out.println("Tebrikler! Doğru tahmin 🎉");
                     break;
                 }
-                if (tahmin > number_2) {
-                    System.out.println("Daha küçük bir sayı giriniz.");
-                } else {
-                    System.out.println("Daha buyuk bir sayi giriniz.");
-                }
             }
+            wrong[i] = tahmin;
         }
         System.out.println("Tahmin edilen Sayimiz : " + number_2 + "'di!");
+        System.out.println("Tahminleriniz :" + Arrays.toString(wrong));
         inp.close();
     }
 }
+
+

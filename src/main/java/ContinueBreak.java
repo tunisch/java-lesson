@@ -30,7 +30,7 @@ public class ContinueBreak {
     public static void main(String[] args) {
         for (int i = 1; i <= 10; i++) {
             if (i == 5) {
-                continue; // continue olan yerde dongunun bu yerin altinda kalan kismi yapmayip bir sonraki duruma gecmeye yarar!! Boylelikle 5 ekrana yazilmamis olur ve for dongusu oldugu icin basa donulur olmasaydi iften cikilirdi ve devam ederdi.
+                continue; // continue olan yerde dongunun icindeki continue altinda kalana hic bir yeri yapmayip basa donup for dongusunde bir sonraki duruma doner Boylelikle 5 ekrana yazilmamis olur.
             }
             System.out.println(i);
         }

@@ -30,7 +30,7 @@ Döngünün dışındaki kodlar kaldığı yerden devam eder.
 //    public static void main(String[] args) {
 //        for (int i = 1; i <= 10; i++) {
 //            if (i == 5) {
-//                continue; // continue olan yerde dongunun bu yerin altinda kalan kismi yapamyip bir sonraki duruma gecmeye yarar!! Boylelikle 5 ekrana yazilmamis olur
+//                continue; // continue olan yerde dongunun bu yerin altinda kalan kismi yapmayip bir sonraki duruma gecmeye yarar!! Boylelikle 5 ekrana yazilmamis olur
 //            }
 //            System.out.println(i);
 //        }

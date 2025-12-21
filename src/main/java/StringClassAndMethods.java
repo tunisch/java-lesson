@@ -162,7 +162,7 @@ public class StringClassAndMethods {
         System.out.println("Lowercase str4: " + str4.toLowerCase());
 
         // toString() method bir String nesnesini degerini verir.
-        System.out.println("String value of str: " + str.toString());
+        System.out.println("String value of str: " + str.toString());  // string nesnesi zaten string oldugu icin ayni degeri verir. direkt str diye basilabilir !
         System.out.println("String value of str2: " + str2.toString());
 
         // toUpperCase() method bir dizeyi buyuk harflere donusturur.

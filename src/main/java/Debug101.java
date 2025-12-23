@@ -1,3 +1,12 @@
+/* ŞU ANDAN SONRA NASIL DEBUG YAPACAKSIN?
+Her kodda şu sırayla:
+“Burada mı yanlış?” dediğin yere breakpoint
+Debug başlat
+F8 ile izle
+Değerleri oku
+Kararı anla
+Bu evrensel.
+ */
 import java.util.Scanner;
 
 public class Debug101 {

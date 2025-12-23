@@ -1,6 +1,6 @@
 //class Car {
 //    //Nitelikler
-//    String type = "Sedan"; // burdak gibi bastan varsayilan oalrakta ayarlanabilir!
+//    String type = "Sedan"; // burdak gibi bastan varsayilan olarakta ayarlanabilir!
 //    String model = "TEST";
 //    String color;
 //    int speed;

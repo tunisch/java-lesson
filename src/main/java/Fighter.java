@@ -5,22 +5,31 @@ public class Fighter {
     int weight;
     double dodge;
 
-    static void hit(Fighter foe, int damage) {
-        foe.health -= damage;
-        if (foe.dodge < damage) {
-            System.out.println(foe.name + " " + damage + " hasar aldı. Kalan can: " + foe.health);
+    Fighter(String name, int damage, int health, int weight, double dodge) {
+        this.name = name;
+        this.damage = damage;
+        this.health = health;
+        this.weight = weight;
+        this.dodge = dodge;
+    }
+
+    // this  = ben demek foe => karsi oluyor
+    public int hit(Fighter foe) { // bir nesne baska nesneyle etkilesiyorsa bu method parametre alir *
+        System.out.println("-----------------------");
+        if (this.dodge > foe.damage) {
+            System.out.println(this.name + " , " + foe.name + " 'den gelen hasari savurdu ");
         } else {
-            System.out.println(foe.name + " gelen hasarı savurdu.");
+            System.out.println(this.name + " darbe aldi.");
         }
-        if (foe.health <= 0) {
-            System.out.println(foe.name + " yenildi!");
-        }
+        return foe.damage;
     }
 
-    double dodge() {
-        double randomValue = Math.random() * 100;
-
-        return 1.0;
+    public boolean dodge() { // bu saldiriyi savurdum mu savurmadim mi cevabi verecegi icin boolean ile olusturulur
+        double number = Math.random() * 100; // ne demek isteniyor?
+        if (number <= dodge) {
+            System.out.println("Savurdu ");
+            return true;
+        }
+        return false;
     }
-
 }

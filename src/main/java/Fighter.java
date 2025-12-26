@@ -15,13 +15,11 @@ public class Fighter {
 
     // this  = ben demek foe => karsi oluyor
     public int hit(Fighter foe) { // bir nesne baska nesneyle etkilesiyorsa bu method parametre alir *
-        System.out.println("-----------------------");
-        if (this.dodge > foe.damage) {
-            System.out.println(this.name + " , " + foe.name + " 'den gelen hasari savurdu ");
-        } else {
-            System.out.println(this.name + " darbe aldi.");
+        System.out.println(this.name + " => " + foe.name + " 'a " + this.damage + " hasar vurdu. ");
+        if (foe.health - this.damage < 0) {
+            return foe.health = 0;
         }
-        return foe.damage;
+        return foe.health -= this.damage;
     }
 
     public boolean dodge() { // bu saldiriyi savurdum mu savurmadim mi cevabi verecegi icin boolean ile olusturulur

@@ -27,8 +27,9 @@ public class Array {
 
 // Sadece boyutu verilerek tanimlanan Arraylar
     public static void main(String[] args) {
-        // Array new ile olusturulur bouytunu vermemi gerekir
-        int[] list = new int[10]; // 10 bouytlu bir dizi
+        // yeni Array new ile olusturulur boyutunu vermemiz gerekir
+        // “Tip + [] + isim = new Tip[boyut]”
+        int[] list = new int[10]; // 10 boyutlu bir dizi
         for (int i = 0; i < list.length; i++) {
             list[i] = (i + 1) * 10;
             System.out.print(list[i] + ",");

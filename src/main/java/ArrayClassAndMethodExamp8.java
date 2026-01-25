@@ -21,7 +21,7 @@ public class ArrayClassAndMethodExamp8 {
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < i; j++) {
-                if (arr[i] == arr[j] && arr[j] % 2 == 0) {
+                if (arr[i] == arr[j] && arr[j] % 2 == 0) { // even number olayi gelen degerlerin arr[j] nin  2 ile bolumunden kalan 0 olanlari almasi esit ve 2 ile bolunenleri alirsa if in icine gir demek
                     if (!isDuplicate(againList, againIndex, arr[j])) { // ! => demek once Duplicate methodu calsitirilri cikan sonuc tersine cevrilir demek yani anlamca benzeri yok ise anlami cikacak benzer cikanlar da sonuc true cikinca !isDuplicate den dolayi false yapilir assagida ekleme yapilmamis olur
                         againList[againIndex] = arr[j];
                         againIndex++; // Bir sayı, dizide İLK KEZ tekrar ettiği anda againIndex bir artar.

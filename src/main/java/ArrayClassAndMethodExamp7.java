@@ -1,48 +1,38 @@
 /* Pratik - Dizideki Tekrar Eden Sayıları Bulan Program */
 
-public class ArrayClassAndMethodExamp7 {
-    static boolean isDublicate(int[] arr, int value) {
-        // for each ile
-        // tip eleman : dizi
-        for (int a : arr) {
-            if (a == value) {
-                return true;
-            }
-        }
-        // for each olmadan
-//        for (int a = 0; a < arr.length; a++) {
-//            if (arr[a] == value) {
-//                return true;
-//            }
-        return false;
-    }
+import java.util.Arrays;
 
+public class ArrayClassAndMethodExamp7 {
     public static void main(String[] args) {
-        int[] arr = {4, 6, 4, 6, 4, 6};
-        int[] dublicate = new int[arr.length];
+
+        int[] arr = {2, 5, 6, 4, 3, 5, 1, 12, 12, 5, 45, 12, 18, 2, 1, 14, 13};
+
+        int againIndex = 0; // againIndex = tekrar eden eleman sayısı
+        int[] againList = new int[arr.length];
 
         for (int i = 0; i < arr.length; i++) {
-            // for döngüsünde arttırma (j++),
-            //sadece döngü gövdesi çalıştıktan sonra olur yani j< ------ durumu true ise j ++ calisir !!!
-            //
-            //Koşul en başta false ise:
-            //
-            //gövdeye girilmez
-            //
-            //arttırma da olmaz
             for (int j = 0; j < i; j++) {
-                // cok tekrar eder tercih edilmez tekrar edenleri bir kere yazdircaz bu yuzden
-                // + yardimci diziye ve methoda ihtiyacimizi var
-///                if(arr[i] == arr[j]){
-                    System.out.println("Tekrar edenler" + arr[i]);
-///                }
-
-                if (isDublicate(dublicate, arr[i])) {
-                    if (arr[i] == arr[j]) {
-                        System.out.println("Tekrar edenler : " + arr[i]);
+                boolean isDuplicate = false;
+                if (arr[i] == arr[j]) {
+                    // kontrol edilme yeri tekrar edilen listedeki degerler gelen (yani ana listedeki tekrar eden rakam ile ayni mi diye tekrar edilir k da tekrar eden rakamlarin icerigi kadar calsiir
+                    for (int k = 0; k < againIndex; k++) {
+                        if (againList[k] == arr[j]) {
+                            isDuplicate = true;
+                            break;
+                        }
                     }
+                    // eklenmemişse ekle
+                    if (!isDuplicate) {
+                        againList[againIndex] = arr[j];
+                        againIndex++;
+                    }
+                    break; // aynı i için başka j bakma
                 }
             }
+        }
+        // sıfırsız, temiz çıktı
+        for (int i = 0; i < againIndex; i++) {
+            System.out.print(againList[i] + " ");
         }
     }
 }

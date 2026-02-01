@@ -23,6 +23,7 @@ public class HackerrankJavaSubarrayExamp {
 
         int n = inp.nextInt();
 
+        int count = 0;
 
         if (1 <= n && n <= 100) {
             System.out.println("Array olusturmaya uygundur");
@@ -39,15 +40,20 @@ public class HackerrankJavaSubarrayExamp {
 
             for (int i = 0; i < arr.length; i++) {
                 int sum = 0;
-                for (int j = i; j < i + 1; j++) {
+
+                for (int j = i; j < arr.length; j++) {
                     sum += arr[j];
-                    System.out.println("{" + arr[j] + "," + arr[j] + "}");
                     if (sum < 0) {
                         System.out.println("negatif toplamlar:" + sum);
+                        count++;
                     }
                 }
+
             }
-            System.out.println(Arrays.toString(arr));
+
+            System.out.println("negatif toplamin subarray sayisi: " + count);
+
+//            System.out.println(Arrays.toString(arr));
 
 
         } else {

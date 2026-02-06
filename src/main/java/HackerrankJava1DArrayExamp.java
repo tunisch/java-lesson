@@ -7,9 +7,10 @@ public class HackerrankJava1DArrayExamp {
         if(index >= game.length) return true;
         if(index < 0 || game[index] == 1 || visited[index]) return false;
 
-        visited[index] = true;
+        visited[index] = true; // Ben buraya geldim. Eğer bir daha buraya gelirsem, aynı yolu tekrar denemeyeceğim.
 
-        return canWin(leap, game, index + 1,boolean[] visited) || canWin(leap,game, index - 1, boolean[] visited) || canWin(leap, game, index + leap,boolean[] visited);
+        return canWin(leap, game, index + 1,visited) || canWin(leap,game, index - 1, visited) || canWin(leap, game, index + leap, visited); // || yapmamizin sebebi ilki true gelince diger ihtimaller denenmeyip  diğerlerini çağırmaz gereksiz hesap yapmaz
+
     }
 
     public static void main(String[] args) {
@@ -30,10 +31,10 @@ public class HackerrankJava1DArrayExamp {
                 game[i] = inp.nextInt();
             }
 
-            System.out.println(canWin(leap, game,0,boolean[] visited) ? "YES" : "NO");
+            System.out.println(canWin(leap, game,0, visited) ? "YES" : "NO");
 
             q--;
         }
     }
 }
-}
+

@@ -1,6 +1,6 @@
 public class FightMain {
     public static void main(String[] args) {
-        Fighter f1 = new Fighter("Alex", 5, 100, 80, 0.7);
+        Fighter f1 = new Fighter("Alex", 5, 100, 80, 0.5);
         Fighter f2 = new Fighter("Jack", 10, 90, 90, 0.3);
         f1.hit(f2);
 
